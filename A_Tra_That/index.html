@@ -477,6 +477,7 @@ header nav{gap:30px;font-size:14px}
   .spine-dot{display:none}
   header nav,.spine,.vert{display:none}
   .num{position:static;display:inline-block;background:none!important;text-align:left;width:auto;margin-bottom:12px}
+  #khong-gian>.num{margin-left:var(--g)}
   .ch{padding:96px var(--g)}
   .hero-copy{grid-template-columns:1fr}
 .glyphs{grid-template-columns:1fr}
@@ -557,6 +558,19 @@ html{background:var(--nau)}
 .dev.tip-up::after{top:auto;bottom:calc(100% + 10px)}
 .dev.tip-left::after{left:auto;right:calc(100% + 10px);top:50%;bottom:auto;transform:translateY(-50%)}
 .mnav .dev::after{left:auto;right:0;top:50%;transform:translateY(-50%)}
+
+/* Mobile polish (20/11): one floating button only (Zalo OA has no link yet, and two stacked circles
+   kept covering text); small caps 11px -> 12px; taller invisible tap area for text links */
+@media (max-width:900px){
+  .fab .fab-z{display:none}
+  .label{font-size:12px}
+  .meta,.st,.chip-wait,.branch,.role,.wait,.tag,footer h5,.next a>span,.courses span,.org span{font-size:12px!important}
+  .link{position:relative}
+  .link::before{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
+  .crumb a{position:relative}
+  .crumb a::before{content:"";position:absolute;left:-4px;right:-4px;top:-10px;bottom:-10px}
+}
+@media (max-width:900px){.hero-tag .sep{display:none}.hero-tag .tag2{display:block;margin-top:8px}}
 </style>
 </head>
 <body>
@@ -597,7 +611,7 @@ html{background:var(--nau)}
   <span class="cap">Ảnh phối cảnh thiết kế — Không gian Tâm, Nguyễn Xiển</span>
   <div class="hero-copy">
     <div>
-      <p class="label hero-tag">Ansan Group · An lành để san sẻ</p>
+      <p class="label hero-tag">Ansan Group<span class="sep"> · </span><span class="tag2">An lành để san sẻ</span></p>
       <h1>Sức khoẻ vàng<br><em>khởi ngàn hạnh phúc</em></h1>
       <p>Dưỡng sinh Y học cổ truyền, đặt vào nhịp sống hôm nay — gần nhà, theo quy trình chuẩn, có người đồng hành.</p>
       <div class="acts"><a class="btn" href="dat-lich.html">Đặt lịch trải nghiệm</a><a class="link" href="hop-tac.html">Hợp tác mở điểm <span>→</span></a><a class="link" href="#edu">Học nghề <span>→</span></a></div>

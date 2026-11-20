@@ -338,3 +338,15 @@ html{background:var(--nau)}
 .mnav .dev::after{left:auto;right:0;top:50%;transform:translateY(-50%)}
 /* hand-written pages (Đặt lịch) keep the 4-column footer; generated pages have 5 (with "Hệ sinh thái") */
 @media (min-width:901px){.f-top:not(:has(> :nth-child(5))){grid-template-columns:2fr 1fr 1fr 1.4fr}}
+
+/* Mobile polish (20/11): one floating button only (Zalo OA has no link yet, and two stacked circles
+   kept covering text); small caps 11px -> 12px; taller invisible tap area for text links */
+@media (max-width:900px){
+  .fab .fab-z{display:none}
+  .label{font-size:12px}
+  .meta,.st,.chip-wait,.branch,.role,.wait,.tag,footer h5,.next a>span,.courses span,.org span{font-size:12px!important}
+  .link{position:relative}
+  .link::before{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
+  .crumb a{position:relative}
+  .crumb a::before{content:"";position:absolute;left:-4px;right:-4px;top:-10px;bottom:-10px}
+}
