@@ -75,6 +75,7 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
 /* steps */
 .steps{display:grid;grid-template-columns:4fr 8fr;gap:6vw;align-items:start}
 .steps .big{font:400 clamp(140px,17vw,260px)/.85 var(--serif);letter-spacing:-.04em;color:var(--dong);font-variant-numeric:lining-nums}
+.steps .big .ph{font-size:.3em;letter-spacing:0;margin-left:.14em}
 .steps .big small{display:block;font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--kem);margin-top:40px}
 .steps ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0;box-shadow:inset 0 1px 0 var(--dong)}
 .steps li{padding:32px 32px 36px 0;box-shadow:inset 0 -1px 0 var(--nau-dat)}
@@ -199,7 +200,7 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
 <!-- 4 steps -->
 <section class="sec ink">
   <div class="steps">
-    <div class="big">65′<small>Mỗi buổi chăm sóc</small></div>
+    <div class="big">65<span class="ph">phút</span><small>Mỗi buổi chăm sóc</small></div>
     <div>
       <h2 style="margin-bottom:40px">Bốn bước,<br>giống nhau ở mọi điểm</h2>
       <ol>
