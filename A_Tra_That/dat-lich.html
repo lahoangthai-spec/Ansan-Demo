@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đặt lịch trải nghiệm — Ansan Dưỡng Sinh</title>
+<link rel="icon" type="image/png" href="../assets/logo-symbol.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ansan Group">
+<meta property="og:title" content="Đặt lịch trải nghiệm — Ansan Dưỡng Sinh">
+<meta property="og:description" content="Đặt lịch trải nghiệm tại cơ sở mẫu Ansan Dưỡng Sinh Nguyễn Xiển. Lễ tân xác nhận qua Zalo hoặc gọi lại trong 24 giờ.">
+<meta property="og:image" content="../assets/tam-phong-tra.jpg">
+<meta name="theme-color" content="#3A2B26">
+<meta name="description" content="Đặt lịch trải nghiệm tại cơ sở mẫu Ansan Dưỡng Sinh Nguyễn Xiển. Lễ tân xác nhận qua Zalo hoặc gọi lại trong 24 giờ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=fallback" rel="stylesheet">
+<link rel="stylesheet" href="../assets/ansan-base.css">
+<link rel="expect" href="#ansan-end" blocking="render">
+<script>
+/* set before first paint: motion flag + a promise that resolves once the page is really on screen
+   (after the cross-document view transition), so reveals never start while rendering is held */
+(function(){var d=document.documentElement;
+/* reload = always start at the top of the page (ignore saved scroll position and #hash); back/forward keep their position */
+var nv=performance.getEntriesByType&&performance.getEntriesByType("navigation")[0];
+if(nv&&nv.type==="reload"){if("scrollRestoration" in history)history.scrollRestoration="manual";
+if(location.hash)history.replaceState(history.state,"",location.pathname+location.search);
+var top0=function(){scrollTo(0,0)};top0();addEventListener("DOMContentLoaded",top0);
+addEventListener("load",function(){top0();setTimeout(function(){top0();history.scrollRestoration="auto"},0)});}
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&"IntersectionObserver" in window)d.classList.add("motion");
+window.__ansanShown=new Promise(function(res){if(!("onpagereveal" in window))return res();
+addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.catch(function(){});v.finished.catch(function(){});}requestAnimationFrame(function(){requestAnimationFrame(res)})},{once:true});addEventListener("pageswap",function(e){var v=e.viewTransition;if(v){v.ready.catch(function(){});v.finished.catch(function(){});}});setTimeout(res,2000);});})();
+</script>
+<style>
+/* P13 · Đặt lịch & nhận tư vấn — /duong-sinh/dat-lich (GĐ1)
+   Rules from Khung v2.1 §6.3: form → lễ tân cơ sở; không thu thông tin bệnh án; ô đồng ý dữ liệu; xác nhận qua Zalo. */
+main{padding:168px var(--g) 120px}
+.crumb{display:flex;gap:10px;font-size:14px;color:var(--nau-dat)}
+.crumb a{border-bottom:1px solid var(--dong)}
+.intro{display:grid;grid-template-columns:7fr 4fr;gap:6vw;align-items:end;margin:28px 0 72px}
+.intro h1{font-size:clamp(48px,6.6vw,104px)}
+.intro p{font-size:18px;color:var(--nau)}
+.layout{display:grid;grid-template-columns:7fr 4fr;gap:6vw;align-items:start}
+
+/* steps */
+.step{display:grid;grid-template-columns:64px 1fr;padding:44px 0;box-shadow:inset 0 1px 0 var(--dong)}
+.step>b{font:italic 400 28px/1 var(--serif);color:var(--dong)}
+.step h2{font-size:clamp(28px,2.6vw,36px);margin-bottom:8px}
+.step .sub{font-size:15px;color:var(--nau-dat);margin-bottom:28px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tiles.slots{grid-template-columns:repeat(3,1fr)}
+.slots .tile{text-align:center;padding:16px 12px}
+.slots .tile b{font-size:20px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+.vung{margin-top:28px;display:none}
+.vung.on{display:grid}
+.submit{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:12px}
+.submit p{font-size:14px;color:var(--nau-dat);max-width:40ch}
+.err{display:none;margin-top:16px;font-size:14px;color:var(--nau);padding:12px 16px;box-shadow:inset 3px 0 0 var(--dong)}
+.err.on{display:block}
+
+/* aside */
+aside{position:sticky;top:110px}
+.card{background:var(--nau);color:var(--kem);padding:40px 36px}
+.card h2,.card h3{color:var(--kem)}
+.card .label{color:var(--kem)}
+.card .btn{background:var(--kem);color:var(--nau)}
+.card .btn:hover{background:var(--dong);color:var(--nau)}
+.card h2{font-size:34px;margin:14px 0 24px}
+.card dl div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 0;box-shadow:inset 0 -1px 0 var(--nau-dat);font-size:15px}
+.card dt{font-size:13px}
+.card .first{margin-top:32px}
+.card .first h3{font-size:24px;margin-bottom:12px}
+.card ol{list-style:none;counter-reset:s}
+.card ol li{counter-increment:s;display:grid;grid-template-columns:32px 1fr;font-size:15px;padding:6px 0}
+.card ol li::before{content:"0" counter(s);font:italic 400 18px var(--serif);color:var(--kem)}
+.card .acts{display:flex;flex-direction:column;gap:12px;margin-top:32px}
+.card .acts .btn{width:100%}
+.card .acts .link{align-self:flex-start;margin-top:8px}
+.card .disclaimer{margin-top:28px;padding-top:20px;box-shadow:inset 0 1px 0 var(--nau-dat)}
+
+/* done state */
+.done{display:none;padding:56px 0;box-shadow:inset 0 1px 0 var(--dong)}
+.done.on{display:block}
+.done h2{font-size:clamp(40px,4.4vw,64px);margin:16px 0 24px}
+.done dl{max-width:520px;margin:24px 0 32px}
+.done dl div{display:grid;grid-template-columns:140px 1fr;padding:12px 0;box-shadow:inset 0 -1px 0 var(--dong)}
+.done dt{font-size:14px;color:var(--nau-dat)}
+.sent-note{font-size:14px;color:var(--xanh);margin-top:16px}
+
+@media (max-width:900px){
+  main{padding:128px var(--g) 88px}
+  .intro,.layout{grid-template-columns:1fr;gap:28px}
+  .intro{margin-bottom:40px}
+  .step{grid-template-columns:1fr;gap:16px;padding:36px 0}
+  .tiles,.row2{grid-template-columns:1fr}
+  .tiles.slots{grid-template-columns:repeat(3,1fr)}
+  aside{position:static}
+  .card{padding:32px 24px}
+}
+</style>
+</head>
+<body class="paper">
+
+<header data-solid class="solid">
+  <a class="brand" href="index.html"><img class="s" src="../assets/logo-symbol.png" alt=""><img class="t" src="../assets/logo-ansan-vector.svg" alt="Ansan — về trang chủ"></a>
+  <nav aria-label="Menu chính"><a href="ve-ansan.html">Về Ansan</a><a href="duong-sinh.html" aria-current="page">Dưỡng Sinh</a><a href="hop-tac.html">Hợp tác</a><a class="dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a href="tin-tuc.html">Kiến thức</a><a href="lien-he.html">Liên hệ</a></nav>
+  <div class="hd-r">
+    <a class="book2" href="hop-tac.html">Hợp tác mở điểm</a>
+    <a class="book" href="tel:0936262499"><span class="l">Gọi 0936 262 499</span><span class="s">Gọi</span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Mở menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav" aria-hidden="true">
+  <nav aria-label="Menu chính">
+    <a href="ve-ansan.html"><i>i</i>Về Ansan</a>
+    <a href="duong-sinh.html"><i>ii</i>Dưỡng Sinh</a>
+    <a href="hop-tac.html"><i>iii</i>Hợp tác</a>
+    <a class="dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển"><i>iv</i>Edu</a>
+    <a class="dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển"><i>v</i>Sản phẩm</a>
+    <a href="tin-tuc.html"><i>vi</i>Kiến thức</a>
+    <a href="lien-he.html"><i>vii</i>Liên hệ</a>
+  </nav>
+  <div class="mnav-foot">
+    <a class="btn" href="tel:0936262499">Gọi 0936 262 499</a>
+    <a class="link" href="hop-tac.html">Hợp tác mở điểm <span>→</span></a>
+    <p>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</p>
+  </div>
+</div>
+
+<main>
+  <nav class="crumb" aria-label="Vị trí"><a href="duong-sinh.html">Ansan Dưỡng Sinh</a><span aria-hidden="true">/</span><span aria-current="page">Đặt lịch</span></nav>
+  <div class="intro">
+    <h1>Đặt lịch<br><em>trải nghiệm</em></h1>
+    <p>Chọn dịch vụ và thời gian bạn muốn. Lễ tân cơ sở Nguyễn Xiển sẽ nhắn Zalo hoặc gọi lại để xác nhận trong 24 giờ.</p>
+  </div>
+
+  <div class="layout">
+    <div>
+      <form id="f" novalidate>
+        <!-- 01 dịch vụ -->
+        <fieldset class="step" style="border:0">
+          <b aria-hidden="true">01</b>
+          <div>
+            <legend><h2>Bạn muốn trải nghiệm</h2></legend>
+            <p class="sub">Lần đầu đến Ansan? Combo Tâm — Thân giúp bạn thử cả hai không gian.</p>
+            <div class="tiles" role="radiogroup">
+              <label class="choice"><input type="radio" name="dv" value="Combo Tâm — Thân" checked><span class="tile"><b>Combo Tâm — Thân</b><span class="sub">Trà dưỡng sinh, ngâm chân và chăm sóc ở Không gian Thân — dành cho khách mới</span><span class="pr">390.000đ · giá đề xuất, chờ duyệt</span></span></label>
+              <label class="choice"><input type="radio" name="dv" value="Không gian Thân"><span class="tile"><b>Không gian Thân</b><span class="sub">Chăm sóc cơ — xương — khớp theo vùng cơ thể, 65 phút</span><span class="pr">350.000–450.000đ / buổi</span></span></label>
+              <label class="choice"><input type="radio" name="dv" value="Không gian Tâm"><span class="tile"><b>Không gian Tâm</b><span class="sub">Thưởng trà dưỡng sinh, ngâm chân dược liệu ở ban công xanh</span><span class="pr">Giá theo menu tại cơ sở</span></span></label>
+              <label class="choice"><input type="radio" name="dv" value="Cần tư vấn trước"><span class="tile"><b>Cần tư vấn trước</b><span class="sub">Chưa rõ nên chọn gì — lễ tân sẽ gợi ý khi gọi lại</span><span class="pr">Lễ tân gọi lại tư vấn</span></span></label>
+            </div>
+            <div class="field vung" id="vung">
+              <label for="vg">Vùng muốn chăm sóc</label>
+              <select id="vg">
+                <option>Chưa rõ — để kỹ thuật viên đánh giá</option>
+                <option>Cổ — vai — gáy — cánh tay</option><option>Vùng lưng — thắt lưng</option><option>Thắt lưng — mông — chân</option>
+                <option>Khớp gối</option><option>Khớp vai — biên độ vận động</option><option>Vùng hông — khớp háng</option>
+                <option>Cột sống — cân bằng tư thế</option><option>Cột sống — giảm cứng, tăng linh hoạt</option>
+                <option>Các khớp nhỏ bàn tay — bàn chân</option><option>Khớp bàn chân — ngón chân</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 02 thời gian -->
+        <fieldset class="step" style="border:0">
+          <b aria-hidden="true">02</b>
+          <div>
+            <legend><h2>Thời gian</h2></legend>
+            <p class="sub">Chọn ngày và buổi bạn tiện. Lễ tân sẽ chốt giờ cụ thể khi xác nhận.</p>
+            <div class="row2">
+              <div class="field"><label for="ngay">Ngày mong muốn</label><input type="date" id="ngay" required></div>
+              <div class="field"><label for="sl">Số người</label><select id="sl"><option>1 người</option><option>2 người</option><option>3 người trở lên</option></select></div>
+            </div>
+            <p class="field" style="margin-top:28px"><span class="lbl">Buổi</span></p>
+            <div class="tiles slots" role="radiogroup" aria-label="Buổi" style="margin-top:10px">
+              <label class="choice"><input type="radio" name="buoi" value="Sáng" checked><span class="tile"><b>Sáng</b></span></label>
+              <label class="choice"><input type="radio" name="buoi" value="Chiều"><span class="tile"><b>Chiều</b></span></label>
+              <label class="choice"><input type="radio" name="buoi" value="Tối"><span class="tile"><b>Tối</b></span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 03 liên hệ -->
+        <fieldset class="step" style="border:0">
+          <b aria-hidden="true">03</b>
+          <div>
+            <legend><h2>Để lễ tân liên hệ</h2></legend>
+            <p class="sub">Không cần ghi tình trạng sức khoẻ. Kỹ thuật viên sẽ hỏi và đánh giá thể trạng trực tiếp trước buổi chăm sóc.</p>
+            <div class="row2">
+              <div class="field"><label for="ten">Họ tên</label><input id="ten" required autocomplete="name"></div>
+              <div class="field"><label for="sdt">Điện thoại / Zalo</label><input id="sdt" required inputmode="tel" autocomplete="tel" pattern="[0-9 +.]{9,15}"></div>
+            </div>
+            <p class="field" style="margin-top:28px"><span class="lbl">Xác nhận qua</span></p>
+            <div class="tiles slots" role="radiogroup" aria-label="Xác nhận qua" style="margin-top:10px;grid-template-columns:1fr 1fr">
+              <label class="choice"><input type="radio" name="kenh" value="Zalo" checked><span class="tile"><b>Zalo</b></span></label>
+              <label class="choice"><input type="radio" name="kenh" value="Gọi điện"><span class="tile"><b>Gọi điện</b></span></label>
+            </div>
+            <label class="agree" style="margin-top:32px"><input type="checkbox" id="ok" required> <span>Tôi đồng ý để Ansan dùng số điện thoại này để xác nhận lịch hẹn, theo <a href="chinh-sach.html#bao-mat" style="border-bottom:1px solid var(--dong)">Chính sách bảo mật dữ liệu</a>.</span></label>
+            <div class="submit" style="margin-top:32px">
+              <button class="btn" type="submit">Xác nhận lịch</button>
+              <p>Chưa thu phí khi đặt lịch. Bạn có thể đổi hoặc huỷ khi lễ tân liên hệ.</p>
+            </div>
+            <p class="err" id="err" role="alert"></p>
+          </div>
+        </fieldset>
+      </form>
+
+      <section class="done" id="done" aria-live="polite">
+        <p class="label">Đã nhận yêu cầu</p>
+        <h2>Cảm ơn bạn,<br><em>hẹn gặp ở Nguyễn Xiển</em></h2>
+        <dl id="sum"></dl>
+        <p>Lễ tân sẽ liên hệ trong 24 giờ để chốt giờ cụ thể. Cần gấp, gọi <a href="tel:0936262499" style="border-bottom:1px solid var(--dong)">0936 262 499</a>.</p>
+        <p class="sent-note">Bản thiết kế — thông tin chưa được gửi đi đâu.</p>
+      </section>
+    </div>
+
+    <aside>
+      <div class="card">
+        <p class="label">Cơ sở mẫu · khai trương 11/2026</p>
+        <h2>Nguyễn Xiển</h2>
+        <dl>
+          <div><dt>Địa chỉ</dt><dd>L7-18 KĐT mới Đại Kim, P. Định Công, Hà Nội</dd></div>
+          <div><dt>Hotline</dt><dd>0936 262 499</dd></div>
+          <div><dt>Giờ mở cửa</dt><dd>Đang cập nhật</dd></div>
+          <div><dt>Workshop</dt><dd>Tối thứ Ba, thứ Sáu</dd></div>
+        </dl>
+        <div class="first">
+          <h3>Buổi đầu tiên</h3>
+          <ol><li>Lắng nghe, đo huyết áp, sàng lọc an toàn</li><li>Phác đồ phù hợp thể trạng</li><li>Chăm sóc 65 phút</li><li>Hướng dẫn tại nhà</li></ol>
+        </div>
+        <div class="acts">
+          <a class="btn" href="tel:0936262499">Gọi 0936 262 499</a>
+          <a class="link dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Chỉ đường <span>→</span></a>
+        </div>
+        <p class="disclaimer">Dịch vụ mang tính chăm sóc, hỗ trợ; không thay thế chẩn đoán và điều trị y khoa. Hiệu quả tuỳ thể trạng mỗi người.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="ink">
+  <div class="f-top">
+    <div><a class="brand" href="index.html"><img class="s" src="../assets/logo-symbol.png" alt=""><img class="t" src="../assets/logo-ansan-vector.svg" alt="Ansan"></a><p>Sức khoẻ vàng khởi ngàn hạnh phúc.</p></div>
+    <div><h5>Ansan</h5><a href="ve-ansan.html">Về Ansan</a><a href="duong-sinh.html">Dưỡng Sinh</a><a href="hop-tac.html">Hợp tác</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a><a href="ban-lanh-dao.html">Ban lãnh đạo</a><a href="phap-ly.html">Pháp nhân</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
+    <div><h5>Chính sách</h5><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a></div>
+    <div><h5>Liên hệ</h5><ul><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></ul></div>
+  </div>
+  <div class="legal"><span>ANSAN là thương hiệu của Công ty CP Nghiên cứu Ứng dụng Công nghệ Sức khỏe Việt Nam (VHTRA., JSC) — MSDN 0111322732.</span><span>Dịch vụ mang tính chăm sóc, hỗ trợ; không thay thế chẩn đoán và điều trị y khoa.</span></div>
+</footer>
+
+<script src="../assets/ansan-base.js"></script>
+<script>
+(()=>{
+const f=document.getElementById('f'), vung=document.getElementById('vung'), err=document.getElementById('err');
+/* pre-select from ?dv=combo|than|tam */
+const pre={combo:'Combo Tâm — Thân',than:'Không gian Thân',tam:'Không gian Tâm'}[new URLSearchParams(location.search).get('dv')];
+if(pre){const r=f.querySelector(`input[name=dv][value="${pre}"]`);if(r)r.checked=true;}
+const sync=()=>vung.classList.toggle('on',f.dv.value==='Không gian Thân');
+f.addEventListener('change',sync);sync();
+/* earliest date = today */
+const d=new Date(), iso=new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10);
+f.querySelector('#ngay').min=iso;
+f.addEventListener('submit',e=>{
+  e.preventDefault();
+  const miss=[];
+  if(!f.ngay.value) miss.push('ngày mong muốn');
+  if(!f.ten.value.trim()) miss.push('họ tên');
+  if(!/^[0-9 +.]{9,15}$/.test(f.sdt.value.trim())) miss.push('số điện thoại hợp lệ');
+  if(!f.ok.checked) miss.push('đồng ý xử lý dữ liệu');
+  if(miss.length){err.textContent='Còn thiếu: '+miss.join(', ')+'.';err.classList.add('on');return;}
+  err.classList.remove('on');
+  const dv=f.dv.value+(f.dv.value==='Không gian Thân'?' · '+f.vg.value:'');
+  const ngay=f.ngay.value.split('-').reverse().join('/');
+  const rows=[['Dịch vụ',dv],['Thời gian',f.buoi.value+', '+ngay],['Số người',f.sl.value],['Liên hệ',f.ten.value.trim()+' · '+f.sdt.value.trim()],['Xác nhận qua',f.kenh.value]];
+  const dl=document.getElementById('sum'); dl.replaceChildren();
+  rows.forEach(([k,v])=>{const w=document.createElement('div'),t=document.createElement('dt'),dd=document.createElement('dd');t.textContent=k;dd.textContent=v;w.append(t,dd);dl.append(w)});
+  f.hidden=true; const done=document.getElementById('done'); done.classList.add('on'); done.scrollIntoView({behavior:'smooth',block:'start'});
+});
+})();
+</script>
+<nav class="fab" aria-label="Liên hệ nhanh">
+  <a class="fab-z dev tip-left" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển" aria-label="Zalo OA Ansan — đang phát triển">Zalo</a>
+  <a class="fab-c" href="tel:0936262499" aria-label="Gọi hotline 0936 262 499"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+</nav>
+<span id="ansan-end" hidden></span>
+</body>
+</html>
