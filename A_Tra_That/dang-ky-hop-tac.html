@@ -32,7 +32,7 @@ window.__ansanShown=new Promise(function(res){if(!("onpagereveal" in window))ret
 addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.catch(function(){});v.finished.catch(function(){});}requestAnimationFrame(function(){requestAnimationFrame(res)})},{once:true});addEventListener("pageswap",function(e){var v=e.viewTransition;if(v){v.ready.catch(function(){});v.finished.catch(function(){});}});setTimeout(res,2000);});})();
 </script>
 <style>.pending .label{color:inherit}
-.chip-wait{display:inline-block;margin-left:10px;padding:4px 10px;background:var(--nau-dat);color:var(--kem);font:600 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;vertical-align:middle}
+.chip-wait{display:inline-block;margin-left:10px;padding:4px 10px;background:var(--nau-dat);color:var(--kem);font:600 12px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;vertical-align:middle}
 .ladder{list-style:none;display:grid;gap:0;box-shadow:inset 0 1px 0 var(--dong)}
 .ladder li{display:grid;grid-template-columns:120px 1fr 2fr;gap:32px;padding:32px 0;box-shadow:inset 0 -1px 0 var(--nau-dat);align-items:baseline}
 .ladder b{font:400 64px/1 var(--serif);color:var(--dong);font-variant-numeric:lining-nums}
@@ -57,7 +57,7 @@ legend .n{font:italic 400 24px var(--serif);color:var(--dong)}
 .submit p{font-size:14px;color:var(--nau-dat)}
 .err{display:none;margin-top:16px;font-size:14px;padding:12px 16px;box-shadow:inset 3px 0 0 var(--dong);color:var(--nau)}.err.on{display:block}
 .done{display:none;padding:40px 0;box-shadow:inset 0 1px 0 var(--dong)}.done.on{display:block}
-.done h3{font-size:clamp(34px,3.6vw,52px);margin:14px 0 14px}
+.done h2,.done h3{font-size:clamp(34px,3.6vw,52px);margin:14px 0 14px}
 .file{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin:32px 0 0;padding:24px 28px;box-shadow:inset 0 0 0 1px var(--dong)}
 .file b{display:block;font:400 24px var(--serif)}.file span{font-size:14px;color:var(--nau-dat)}
 .sent-note{font-size:14px;color:var(--xanh);margin-top:16px}
@@ -135,7 +135,7 @@ legend .n{font:italic 400 24px var(--serif);color:var(--dong)}
       </form>
       <div class="done" id="pdone" aria-live="polite">
         <p class="label">Đã nhận đăng ký</p>
-        <h3>Cảm ơn bạn, hồ sơ đã sẵn sàng</h3>
+        <h2 class="h3">Cảm ơn bạn, hồ sơ đã sẵn sàng</h2>
         <p class="muted">Chuyên viên đối tác sẽ gọi lại trong 24 giờ. Trong lúc chờ, bạn có thể tải hồ sơ đối tác.</p>
         <div class="file"><div><b>Hồ sơ đối tác Ansan Dưỡng Sinh</b><span>PDF · bản chờ HĐQT duyệt gói và phí</span></div><a class="dev btn" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Tải hồ sơ</a></div>
         <p class="sent-note">Bản thiết kế — thông tin chưa được gửi đi đâu; file hồ sơ sẽ gắn ở bản chạy thật.</p>
@@ -154,10 +154,10 @@ legend .n{font:italic 400 24px var(--serif);color:var(--dong)}
 <footer class="ink">
   <div class="f-top">
     <div><a class="brand" href="index.html"><img class="s" src="../assets/logo-symbol.png" alt=""><img class="t" src="../assets/logo-ansan-vector.svg" alt="Ansan"></a><p>Sức khoẻ vàng khởi ngàn hạnh phúc.</p></div>
-    <div><h5>Hợp tác mở điểm</h5><a href="hop-tac.html">Cơ hội hợp tác</a><a href="goi-dau-tu.html">Gói đầu tư</a><a href="lo-trinh-mo-diem.html">Lộ trình mở điểm</a><a href="dang-ky-hop-tac.html">Đăng ký tư vấn</a></div>
-    <div><h5>Hệ sinh thái</h5><a href="duong-sinh.html">Dưỡng Sinh</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a></div>
-    <div><h5>Chính sách</h5><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
-    <div><h5>Liên hệ</h5><ul><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></ul></div>
+    <div><h2 class="fh">Hợp tác mở điểm</h2><a href="hop-tac.html">Cơ hội hợp tác</a><a href="goi-dau-tu.html">Gói đầu tư</a><a href="lo-trinh-mo-diem.html">Lộ trình mở điểm</a><a href="dang-ky-hop-tac.html">Đăng ký tư vấn</a></div>
+    <div><h2 class="fh">Hệ sinh thái</h2><a href="duong-sinh.html">Dưỡng Sinh</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a></div>
+    <div><h2 class="fh">Chính sách</h2><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
+    <div><h2 class="fh">Liên hệ</h2><ul><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></ul></div>
   </div>
   <div class="legal"><span>ANSAN là thương hiệu của Công ty CP Nghiên cứu Ứng dụng Công nghệ Sức khỏe Việt Nam (VHTRA., JSC) — MSDN 0111322732.</span><span>Dịch vụ mang tính chăm sóc, hỗ trợ; không thay thế chẩn đoán và điều trị y khoa. Ansan không cam kết lợi nhuận hay thời gian hoàn vốn. Số liệu kinh doanh là kịch bản tham khảo, có giả định, chỉ có trong hồ sơ gửi riêng.</span></div>
 </footer>

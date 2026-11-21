@@ -31,7 +31,7 @@ if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&"IntersectionObserve
 window.__ansanShown=new Promise(function(res){if(!("onpagereveal" in window))return res();
 addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.catch(function(){});v.finished.catch(function(){});}requestAnimationFrame(function(){requestAnimationFrame(res)})},{once:true});addEventListener("pageswap",function(e){var v=e.viewTransition;if(v){v.ready.catch(function(){});v.finished.catch(function(){});}});setTimeout(res,2000);});})();
 </script>
-<style>.chip-wait{display:inline-block;padding:4px 10px;background:var(--nau-dat);color:var(--kem);font:600 11px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;vertical-align:middle}
+<style>.chip-wait{display:inline-block;padding:4px 10px;background:var(--nau-dat);color:var(--kem);font:600 12px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;vertical-align:middle}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
 .err{display:none;font-size:14px;padding:12px 16px;box-shadow:inset 3px 0 0 var(--dong);color:var(--nau)}.err.on{display:block}
 .done{display:none}.done.on{display:block}
@@ -91,7 +91,7 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
   <div class="art">
     <aside><p class="label">Bài mẫu <span class="chip-wait">Chờ duyệt</span></p><p class="muted" style="margin-top:14px;font-size:14px">Bố cục trang chi tiết bài viết. Nội dung chính thức chờ duyệt trước khi đăng.</p></aside>
     <div class="body">
-      <figure class="grade"><img src="../assets/tam-rong.jpg" alt="Không gian Tâm, cơ sở mẫu Nguyễn Xiển"><figcaption>Ảnh phối cảnh thiết kế — Không gian Tâm, cơ sở mẫu Nguyễn Xiển.</figcaption></figure>
+      <figure class="grade"><img loading="lazy" decoding="async" src="../assets/tam-rong.jpg" alt="Không gian Tâm, cơ sở mẫu Nguyễn Xiển"><figcaption>Ảnh phối cảnh thiết kế — Không gian Tâm, cơ sở mẫu Nguyễn Xiển.</figcaption></figure>
       <p class="lead">Ngày 20/10/2026, Ansan và Trường Trung cấp Y khoa Việt Nam ký biên bản ghi nhớ hợp tác đào tạo.</p>
       <p>Theo biên bản, hai bên phối hợp đào tạo kỹ thuật viên dưỡng sinh, chứng chỉ nghề ngắn hạn và cơ sở thực hành. Học viên sau khi hoàn thành chương trình có cơ hội trở thành kỹ thuật viên cho các điểm Ansan, theo cùng một chuẩn tay nghề dựa trên quy trình 10 liệu trình.</p>
       <h2>Lớp đầu tiên</h2>
@@ -107,10 +107,10 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
 <footer class="ink">
   <div class="f-top">
     <div><a class="brand" href="index.html"><img class="s" src="../assets/logo-symbol.png" alt=""><img class="t" src="../assets/logo-ansan-vector.svg" alt="Ansan"></a><p>Sức khoẻ vàng khởi ngàn hạnh phúc.</p></div>
-    <div><h5>Kiến thức</h5><a href="tin-tuc.html">Tin & kiến thức</a><a href="dat-lich.html">Đặt lịch</a></div>
-    <div><h5>Hệ sinh thái</h5><a href="duong-sinh.html">Dưỡng Sinh</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a></div>
-    <div><h5>Chính sách</h5><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
-    <div><h5>Liên hệ</h5><ul><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></ul></div>
+    <div><h2 class="fh">Kiến thức</h2><a href="tin-tuc.html">Tin & kiến thức</a><a href="dat-lich.html">Đặt lịch</a></div>
+    <div><h2 class="fh">Hệ sinh thái</h2><a href="duong-sinh.html">Dưỡng Sinh</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a></div>
+    <div><h2 class="fh">Chính sách</h2><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
+    <div><h2 class="fh">Liên hệ</h2><ul><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></ul></div>
   </div>
   <div class="legal"><span>ANSAN là thương hiệu của Công ty CP Nghiên cứu Ứng dụng Công nghệ Sức khỏe Việt Nam (VHTRA., JSC) — MSDN 0111322732.</span><span>Dịch vụ mang tính chăm sóc, hỗ trợ; không thay thế chẩn đoán và điều trị y khoa.</span></div>
 </footer>

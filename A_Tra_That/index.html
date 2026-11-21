@@ -53,7 +53,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.1;color:var(--kem)}
 em{font-style:italic;color:var(--copper)}
-.label{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--copper)}
+.label{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--copper)}
 .link{display:inline-flex;gap:12px;align-items:center;font-weight:500;font-size:16px;border-bottom:1px solid currentColor;padding-bottom:6px}
 .link:hover{color:var(--copper)}
 .btn{display:inline-block;background:var(--copper);color:var(--ink);font-weight:600;padding:18px 32px;font-size:15px;border:0;cursor:pointer;font-family:var(--sans)}
@@ -67,7 +67,7 @@ p{max-width:60ch}
 .spine{position:absolute;left:calc(var(--g)/2);top:var(--st,100vh);height:var(--sh,0px);width:1px;z-index:5;pointer-events:none}
 .spine::before{content:"";position:absolute;inset:0;background:var(--nau-dat)}
 .spine::after{content:"";position:absolute;left:-.5px;top:0;width:2px;height:100%;background:var(--dong);transform-origin:top;transform:scaleY(var(--k,0));will-change:transform}
-.num{position:absolute;left:calc(var(--g)/2 - 20px);width:40px;text-align:center;font:italic 400 18px var(--serif);color:var(--copper);padding:8px 0;z-index:6}
+.num{position:absolute;left:calc(var(--g)/2 - 24px);width:48px;text-align:center;font:italic 400 24px/1.1 var(--serif);color:var(--copper);padding:8px 0;z-index:6}
 .ink .num{background:var(--ink)}.paper .num{background:var(--paper)}
 
 header{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:28px var(--g)}
@@ -130,8 +130,8 @@ header nav a:hover{color:var(--copper)}
 .timeline li{position:relative;padding:0 0 40px 40px}
 .timeline li:last-child{padding-bottom:0}
 .timeline li::before{content:"";position:absolute;left:-5px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1px solid var(--copper)}
-.timeline h4{font:400 28px/1.2 var(--serif);color:var(--kem)}
-.timeline h4 i{font-style:italic;color:var(--copper);margin-right:12px;font-size:18px}
+.timeline h3{font:400 28px/1.2 var(--serif);color:var(--kem)}
+.timeline h3 i{font-style:italic;color:var(--copper);margin-right:12px;font-size:18px}
 .timeline p{margin-top:6px}
 .proc-intro{margin-bottom:48px}
 .proc-intro h2{font-size:clamp(40px,4.4vw,68px)}
@@ -153,7 +153,7 @@ header nav a:hover{color:var(--copper)}
 .price dd{font-family:var(--serif);font-size:22px;color:var(--nau)}
 .price .btn{background:var(--nau);color:var(--paper);display:block;text-align:center;height:56px;line-height:20px}
 .price .btn:hover{background:var(--copper);color:var(--ink)}
-.note{font-size:15px;color:var(--on-paper-dim);margin-top:28px}
+.note{font-size:16px;color:var(--on-paper-dim);margin-top:28px}
 
 /* place */
 .place{display:grid;grid-template-columns:7fr 5fr;border-top:1px solid var(--line-ink)}
@@ -195,7 +195,7 @@ header nav a:hover{color:var(--copper)}
 .eco ul{list-style:none;border-top:1px solid var(--line-ink)}
 .eco li{display:grid;grid-template-columns:2fr 3fr 1.3fr;gap:32px;padding:30px 0;border-bottom:1px solid var(--line-ink);align-items:baseline}
 .eco h3{font-size:clamp(26px,2.6vw,38px)}
-.eco li span{font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper);text-align:right}
+.eco li span{font:600 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper);text-align:right}
 
 /* edu: bleed left, crop */
 .edu{display:grid;grid-template-columns:6fr 6fr;align-items:stretch}
@@ -205,7 +205,7 @@ header nav a:hover{color:var(--copper)}
 .edu h2{font-size:clamp(40px,4vw,64px);margin:24px 0 28px}
 .courses{margin:40px 0;border-top:1px solid var(--line-ink)}
 .courses div{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line-ink);font:400 24px var(--serif);color:var(--kem)}
-.courses span{font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper)}
+.courses span{font:600 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--copper)}
 
 .mou{background:var(--paper);color:var(--nau);padding:120px var(--g) 100px;display:flex;flex-direction:column;justify-content:flex-end}
 .mou .label{color:var(--nau-dat)}
@@ -219,7 +219,7 @@ form{display:grid;gap:28px;padding-top:24px}
 .field label{font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--on-paper-dim)}
 .field input,.field select{border:0;border-bottom:1px solid var(--dong);background:transparent;font:400 18px var(--sans);padding:8px 0;color:var(--nau);border-radius:0}
 .field input:focus,.field select:focus{outline:none;border-color:var(--copper)}
-.agree{display:flex;gap:10px;font-size:14px;color:var(--on-paper-dim);align-items:flex-start}
+.agree{display:flex;gap:10px;font-size:15px;color:var(--on-paper-dim);align-items:flex-start}
 .agree input{appearance:none;width:16px;height:16px;border:1px solid var(--copper);margin-top:3px;flex:none;cursor:pointer}
 .agree input:checked{background:var(--copper);box-shadow:inset 0 0 0 3px var(--paper)}
 form .btn{justify-self:start;background:var(--nau);color:var(--paper)}
@@ -230,7 +230,7 @@ footer{padding:96px var(--g) 40px}
 .f-top{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:48px;padding-bottom:64px;border-bottom:1px solid var(--line-ink)}
 .f-top .brand .t{width:120px}.f-top .brand .s{width:40px}
 .f-top p{font-size:15px;margin-top:20px}
-.f-top h5{font:600 11px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--on-ink-dim);margin-bottom:16px}
+.f-top .fh{font:600 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--on-ink-dim);margin-bottom:16px}
 .f-top a,.f-top li{display:block;font-size:15px;padding:5px 0;list-style:none}
 .f-top a:hover{color:var(--copper)}
 .f-top a.brand{display:flex;padding:0}
@@ -238,8 +238,8 @@ footer{padding:96px var(--g) 40px}
 
 /* ---------- numerals: Playfair defaults to old-style figures (uneven heights).
    Force lining figures everywhere; the `font:` shorthand resets this, so list those rules explicitly. */
-body,h1,h2,h3,h4,.serif,.num,.big65,.timeline h4,.timeline h4 i,.menu li span,.price .big,.price dd,.offer b,.tiers b,.packs b,.packs3 b,.courses div,.mou b,.mou p,.name dt,.label,.unit,.field input,.field select{font-variant-numeric:lining-nums}
-.price .big,.price dd,.packs3 b,.menu li span,.timeline h4 i,.offer b,.mou b,.big65{font-variant-numeric:lining-nums tabular-nums}
+body,h1,h2,h3,h4,.serif,.num,.big65,.timeline h3,.timeline h3 i,.menu li span,.price .big,.price dd,.offer b,.tiers b,.packs b,.packs3 b,.courses div,.mou b,.mou p,.name dt,.label,.unit,.field input,.field select{font-variant-numeric:lining-nums}
+.price .big,.price dd,.packs3 b,.menu li span,.timeline h3 i,.offer b,.mou b,.big65{font-variant-numeric:lining-nums tabular-nums}
 /* An / San drawn from the logotype (vector, from the business-card artwork) */
 .glyphs .g{font:inherit;letter-spacing:0;height:clamp(72px,9.5vw,140px)}
 .glyphs .g img{height:100%;width:auto;display:block}
@@ -271,6 +271,7 @@ body,h1,h2,h3,h4,.serif,.num,.big65,.timeline h4,.timeline h4 i,.menu li span,.p
 .motion [data-par]{will-change:transform}
 .place figure{overflow:hidden}
 /* 5 heading line masks */
+.rv-line{display:block}
 .motion .rv-line{display:block;overflow:hidden;padding:.2em 0 .08em;margin:-.2em 0 -.08em}
 .motion .rv-line>span{display:block;transform:translate3d(0,110%,0);transition:transform 1.15s var(--ease)}
 .motion .rv-line.in>span{transform:none}
@@ -280,7 +281,7 @@ body,h1,h2,h3,h4,.serif,.num,.big65,.timeline h4,.timeline h4 i,.menu li span,.p
 .motion .timeline li::before{transition:background .5s var(--ease),box-shadow .5s var(--ease)}
 .motion .timeline li.lit::before{background:var(--copper)}
 /* steps not yet reached: solid nâu đất (no transparency) · reached: solid kem */
-.motion .timeline h4,.motion .timeline h4 i,.motion .timeline p{color:var(--nau-dat);transition:color .6s var(--ease)}
+.motion .timeline h3,.motion .timeline h3 i,.motion .timeline p{color:var(--nau-dat);transition:color .6s var(--ease)}
 .motion .timeline li.lit h4,.motion .timeline li.lit h4 i,.motion .timeline li.lit p{color:var(--kem)}
 /* 7 ledger rules draw + rows */
 .motion .menu li{position:relative;border-bottom-color:var(--paper)}
@@ -309,12 +310,12 @@ header nav{color:var(--kem)}header nav a:hover{color:var(--kem);text-decoration:
 .chip{background:var(--nau);color:var(--kem);padding:4px 10px;font-size:12px}
 .rc.chip{color:var(--kem)}
 /* photos carry the darkness themselves */
-.hero .img img{filter:sepia(.12) saturate(.92) brightness(.56) contrast(1.08)}
-.pband img{filter:sepia(.12) saturate(.92) brightness(.4) contrast(1.08)}
+.hero .img img{filter:sepia(.12) saturate(.92) brightness(.42) contrast(1.08)}
+.pband img{filter:sepia(.12) saturate(.92) brightness(.32) contrast(1.08)}
 .hero p{color:var(--kem)}
 .cap{color:var(--kem)}
 /* small type on nâu đậm is solid kem; đồng only for large type */
-.eco li span,.courses span,.timeline h4 i{color:var(--kem)}
+.eco li span,.courses span,.timeline h3 i{color:var(--kem)}
 .big65 small,.place dt,.offer small{color:var(--kem)}
 /* paper sections */
 .paper .btn,.price .btn,form .btn{background:var(--nau);color:var(--kem)}
@@ -356,7 +357,8 @@ header nav a{padding:6px 0}
 .burger span:nth-child(1){top:17px}.burger span:nth-child(2){top:25px}
 .menu-open .burger span:nth-child(1){top:21px;transform:rotate(45deg)}
 .menu-open .burger span:nth-child(2){top:21px;transform:rotate(-45deg)}
-.burger:focus-visible{outline:1px solid var(--dong);outline-offset:2px}
+:focus-visible{outline:2px solid var(--dong);outline-offset:3px}
+.burger:focus-visible{outline:2px solid var(--dong);outline-offset:2px}
 .menu-open header{background:var(--nau);box-shadow:inset 0 -1px 0 var(--dong);transform:none}
 .mnav{position:fixed;inset:0;z-index:19;background:var(--nau);color:var(--kem);display:none;flex-direction:column;justify-content:space-between;
   padding:112px var(--g) 40px;overflow-y:auto;visibility:hidden;clip-path:inset(0 0 100% 0);
@@ -406,8 +408,8 @@ header nav{gap:30px;font-size:14px}
 .stats>div:first-child{padding-left:0;box-shadow:none}
 .stats b{display:block;font:400 clamp(56px,5.6vw,88px)/1 var(--serif);letter-spacing:-.03em;color:var(--dong);font-variant-numeric:lining-nums}
 .stats b{white-space:nowrap}
-.stats b i{font-style:normal;font-size:.42em;letter-spacing:0;margin-left:.08em}
-.stats span{display:block;margin-top:14px;font-size:15px;line-height:1.45;color:var(--kem);max-width:16ch}
+.stats b i{font-style:normal;font-size:max(24px,.42em);letter-spacing:0;margin-left:.08em}
+.stats span{display:block;margin-top:14px;font-size:16px;line-height:1.45;color:var(--kem);max-width:16ch}
 .motion .stats>div{clip-path:inset(100% 0 0 0);transform:translateY(16px);transition:clip-path .9s var(--ease),transform .9s var(--ease)}
 .motion .stats>div.in{clip-path:inset(-10% -10% -10% -10%);transform:none}
 
@@ -417,9 +419,9 @@ header nav{gap:30px;font-size:14px}
 .eco .cards{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;border:0}
 .eco .cards li{display:flex;flex-direction:column;gap:14px;padding:28px 24px;min-height:340px;box-shadow:inset 0 0 0 1px var(--nau-dat);border:0;grid-template-columns:none}
 .eco .cards li.lead-card{background:var(--nau-dat);box-shadow:none}
-.eco .cards .st{font:600 11px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--kem);text-align:left}
+.eco .cards .st{font:600 12px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--kem);text-align:left}
 .eco .cards h3{font-size:clamp(24px,2vw,30px);margin-top:36px}
-.eco .cards p{font-size:15px;line-height:1.5}
+.eco .cards p{font-size:16px;line-height:1.5}
 .eco .cards .link{margin-top:auto;align-self:flex-start;font-size:15px;border-bottom-color:var(--dong)}
 .eco .cards .link span{font:inherit;letter-spacing:0;text-transform:none;color:inherit}
 
@@ -434,7 +436,7 @@ header nav{gap:30px;font-size:14px}
 .leaders .ph{aspect-ratio:3/4;background:var(--nau-dat);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;margin-bottom:20px}
 .leaders .ph svg{width:44%;height:auto;aspect-ratio:1.06;fill:var(--nau)}
 .leaders .ph figcaption{font-size:12px;letter-spacing:.06em;color:var(--kem);text-align:center}
-.leaders .role{display:block;font:600 11px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--kem)}
+.leaders .role{display:block;font:600 12px/1.5 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--kem)}
 .leaders h3{font-size:24px;margin-top:8px}
 
 /* 9 · chuẩn mực & đối tác (nền kem) */
@@ -443,18 +445,18 @@ header nav{gap:30px;font-size:14px}
 .standards li:not(:nth-child(3n+1)){padding-left:36px;box-shadow:inset 1px 0 0 var(--dong)}
 .standards li b{font:italic 400 28px/1 var(--serif);color:var(--dong);font-variant-numeric:lining-nums}
 .standards li h3{font-size:26px;margin:18px 0 10px;color:var(--nau)}
-.standards li p{font-size:15px;color:var(--nau-dat)}
+.standards li p{font-size:16px;color:var(--nau-dat)}
 .partners{display:grid;grid-template-columns:7fr 5fr;gap:7vw;margin-top:72px;align-items:start}
 .partners h3{font-size:clamp(30px,3vw,44px);margin:16px 0 12px;color:var(--nau)}
 .partners p{color:var(--nau-dat)}
-.pt-more p{margin-top:16px;font-size:15px;line-height:1.8}
+.pt-more p{margin-top:16px;font-size:16px;line-height:1.8}
 
 /* 10 · góc dưỡng sinh & tin mới */
 .news ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
 .news figure{aspect-ratio:4/3;overflow:hidden;margin-bottom:22px}
 .news figure img{filter:brightness(.82) contrast(1.04);transition:transform 1.2s var(--ease)}
 .news li:hover figure img{transform:scale(1.04)}
-.news .meta{display:block;font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--kem)}
+.news .meta{display:block;font:600 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--kem)}
 .news h3{font-size:clamp(24px,2vw,30px);margin:12px 0 20px}
 .news li .link{font-size:15px;border-bottom-color:var(--dong)}
 .fine-ink{margin-top:40px;font-size:13px;color:var(--kem)}
@@ -566,13 +568,13 @@ html{background:var(--nau)}
 @media (max-width:900px){
   .fab .fab-z{display:none}
   .label{font-size:12px}
-  .meta,.st,.chip-wait,.branch,.role,.wait,.tag,footer h5,.next a>span,.courses span,.org span{font-size:12px!important}
+  .meta,.st,.chip-wait,.branch,.role,.wait,.tag,footer .fh,.next a>span,.courses span,.org span{font-size:12px!important}
   .link{position:relative}
   .link::before{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
   .crumb a{position:relative}
   .crumb a::before{content:"";position:absolute;left:-4px;right:-4px;top:-10px;bottom:-10px}
 }
-@media (max-width:900px){.hero-tag .sep{display:none}.hero-tag .tag2{display:block;margin-top:8px}}
+@media (max-width:900px){.hero-tag .tag1,.hero-tag .sep{display:none}.hero-tag{letter-spacing:.14em;margin-bottom:26px}.hero h1 em{display:block;text-wrap:balance}.hero>.cap{left:var(--g);right:84px}}
 </style>
 </head>
 <body>
@@ -608,12 +610,13 @@ html{background:var(--nau)}
   </div>
 </div>
 
+<main>
 <section class="hero">
   <div class="img grade"><img src="../assets/tam-phong-tra.jpg" alt="Phòng trà dưỡng sinh, Không gian Tâm"><div class="dim"></div></div>
   <span class="cap">Ảnh phối cảnh thiết kế — Không gian Tâm, Nguyễn Xiển</span>
   <div class="hero-copy">
     <div>
-      <p class="label hero-tag">Ansan Group<span class="sep"> · </span><span class="tag2">An lành để san sẻ</span></p>
+      <p class="label hero-tag"><span class="tag1">Ansan Group</span><span class="sep"> · </span><span class="tag2">An lành để san sẻ</span></p>
       <h1>Sức khoẻ vàng<br><em>khởi ngàn hạnh phúc</em></h1>
       <p>Dưỡng sinh Y học cổ truyền, đặt vào nhịp sống hôm nay — gần nhà, theo quy trình chuẩn, có người đồng hành.</p>
       <div class="acts"><a class="btn" href="dat-lich.html">Đặt lịch trải nghiệm</a><a class="link" href="hop-tac.html">Hợp tác mở điểm <span>→</span></a><a class="link" href="#edu">Học nghề <span>→</span></a></div>
@@ -630,16 +633,16 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink" id="ve-ansan" style="padding-bottom:40px">
-  <span class="num">i</span>
+  <span aria-hidden="true" class="num">i</span>
   <p class="label">An lành để san sẻ</p>
   <div class="glyphs">
-    <div><span class="g"><img src="../assets/logo-an.svg" alt="AN"></span><p>An lành, an yên trong thân và tâm — điều dưỡng sinh hướng tới cho mỗi người.</p></div>
-    <div><span class="g"><img src="../assets/logo-san.svg" alt="SAN"></span><p>San sẻ — sức khoẻ của một người được giữ gìn sẽ lan thành hạnh phúc của cả gia đình, và mô hình Ansan được san sẻ tới từng khu dân cư.</p></div>
+    <div><span class="g"><img loading="lazy" decoding="async" src="../assets/logo-an.svg" alt="AN"></span><p>An lành, an yên trong thân và tâm — điều dưỡng sinh hướng tới cho mỗi người.</p></div>
+    <div><span class="g"><img loading="lazy" decoding="async" src="../assets/logo-san.svg" alt="SAN"></span><p>San sẻ — sức khoẻ của một người được giữ gìn sẽ lan thành hạnh phúc của cả gia đình, và mô hình Ansan được san sẻ tới từng khu dân cư.</p></div>
   </div>
 </section>
 
 <section class="ch ink eco" id="he-sinh-thai" style="border-top:1px solid var(--line-ink)">
-  <span class="num">ii</span>
+  <span aria-hidden="true" class="num">ii</span>
   <div class="eco-head"><h2>Phía sau mỗi điểm Ansan</h2><p>Năm nhánh cùng một tên: đào tạo, nghiên cứu, sản phẩm, thiết bị và dịch vụ dưỡng sinh.</p></div>
   <ul class="cards">
     <li class="lead-card"><span class="st">Nguyễn Xiển · khai trương 11/2026</span><h3>Ansan Dưỡng Sinh</h3><p>Chuỗi cơ sở dưỡng sinh công nghệ cao, chăm sóc cơ — xương — khớp.</p><a class="link" href="duong-sinh.html">Khám phá <span>→</span></a></li>
@@ -651,17 +654,17 @@ html{background:var(--nau)}
 </section>
 
 <section class="ink" id="khong-gian" style="position:relative;padding:64px 0 110px">
-  <span class="num" style="top:64px">iii</span>
+  <span aria-hidden="true" class="num" style="top:64px">iii</span>
   <div class="spaces-head"><h2>Hai tầng,<br>một hành trình</h2><p>Tĩnh tâm trước, chăm thân sau. Mỗi điểm Ansan đều có Không gian Tâm và Không gian Thân.</p></div>
   <div class="spaces">
     <article class="sp sp-a">
-      <figure class="grade reveal"><img data-par src="../assets/quay-tra.jpg" alt="Quầy trà và kệ trà âm tường"></figure>
+      <figure class="grade reveal"><img loading="lazy" decoding="async" data-par src="../assets/quay-tra.jpg" alt="Quầy trà và kệ trà âm tường"></figure>
       <div class="txt"><div class="meta"><span class="label">Tầng 1 · Không gian Tâm</span><span class="rc">Ảnh phối cảnh</span></div>
       <h3>Thưởng trà, workshop, ngâm chân dược liệu</h3>
       <p>Phòng trà khoảng 20 chỗ, bàn trà dài cho workshop cộng đồng, ban công xanh để ngâm chân.</p></div>
     </article>
     <article class="sp sp-b">
-      <figure class="grade reveal"><img data-par src="../assets/than-phong.jpg" alt="Phòng chăm sóc ba giường, rèm riêng tư"></figure>
+      <figure class="grade reveal"><img loading="lazy" decoding="async" data-par src="../assets/than-phong.jpg" alt="Phòng chăm sóc ba giường, rèm riêng tư"></figure>
       <div class="meta"><span class="label">Tầng 2 · Không gian Thân</span><span class="rc">Ảnh phối cảnh</span></div>
       <h3>Chăm sóc Cơ — Xương — Khớp</h3>
       <p>Sáu giường, rèm riêng tư. Làm ấm, thư giãn cơ, thiết bị hỗ trợ và thủ pháp Y học cổ truyền.</p>
@@ -670,23 +673,23 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink" id="quy-trinh" style="border-top:1px solid var(--line-ink)">
-  <span class="num">iv</span>
+  <span aria-hidden="true" class="num">iv</span>
   <div class="proc">
     <div class="big65"><span class="cnt" data-to="65">65</span><span class="ph">phút</span><small>Mỗi buổi chăm sóc</small></div>
     <div>
       <div class="proc-intro"><h2>Bốn bước, giống nhau ở mọi điểm</h2></div>
       <ol class="timeline">
-        <li><h4><i>01</i>Đánh giá thể trạng</h4><p>Lắng nghe, đo huyết áp, sàng lọc an toàn.</p></li>
-        <li><h4><i>02</i>Phác đồ riêng</h4><p>Liệu trình và cường độ phù hợp từng người.</p></li>
-        <li><h4><i>03</i>Chăm sóc</h4><p>Làm ấm, thư giãn cơ, công nghệ hỗ trợ, thủ pháp YHCT.</p></li>
-        <li><h4><i>04</i>Hướng dẫn tại nhà</h4><p>Tư thế, bài vận động nhẹ giữa các buổi.</p></li>
+        <li><h3><i>01</i>Đánh giá thể trạng</h3><p>Lắng nghe, đo huyết áp, sàng lọc an toàn.</p></li>
+        <li><h3><i>02</i>Phác đồ riêng</h3><p>Liệu trình và cường độ phù hợp từng người.</p></li>
+        <li><h3><i>03</i>Chăm sóc</h3><p>Làm ấm, thư giãn cơ, công nghệ hỗ trợ, thủ pháp YHCT.</p></li>
+        <li><h3><i>04</i>Hướng dẫn tại nhà</h3><p>Tư thế, bài vận động nhẹ giữa các buổi.</p></li>
       </ol>
     </div>
   </div>
 </section>
 
 <section class="ch paper menu" id="lieu-trinh">
-  <span class="num">v</span>
+  <span aria-hidden="true" class="num">v</span>
   <div class="menu-grid">
     <div>
       <h2 style="margin-top:0">Mười liệu trình,<br>theo vùng cơ thể</h2>
@@ -717,7 +720,7 @@ html{background:var(--nau)}
 </section>
 
 <section class="place ink" id="co-so">
-  <figure class="grade reveal" style="position:relative"><img data-par src="../assets/loi-vao.jpg" alt="Lối vào cơ sở Ansan dưới mái ngói"><span class="rc chip" style="position:absolute;left:var(--g);bottom:20px">Ảnh phối cảnh thiết kế</span></figure>
+  <figure class="grade reveal" style="position:relative"><img loading="lazy" decoding="async" data-par src="../assets/loi-vao.jpg" alt="Lối vào cơ sở Ansan dưới mái ngói"><span class="rc chip" style="position:absolute;left:var(--g);bottom:20px">Ảnh phối cảnh thiết kế</span></figure>
   <div class="txt">
     <div>
       <p class="label">vi · Cơ sở mẫu · khai trương 11/2026</p>
@@ -734,7 +737,7 @@ html{background:var(--nau)}
 </section>
 
 <section id="hop-tac">
-  <div class="pband reveal"><img class="grade" data-par src="../assets/ban-cong.jpg" alt="Ban công xanh ngâm chân" ><span class="rc chip" style="position:absolute;right:var(--g);top:24px;z-index:2">Ảnh phối cảnh thiết kế</span><div class="t"><p class="label">vii · Hợp tác mở điểm</p><h2 style="margin-top:20px">Mang Ansan về khu phố của bạn</h2></div></div>
+  <div class="pband reveal"><img loading="lazy" decoding="async" class="grade" data-par src="../assets/ban-cong.jpg" alt="Ban công xanh ngâm chân" ><span class="rc chip" style="position:absolute;right:var(--g);top:24px;z-index:2">Ảnh phối cảnh thiết kế</span><div class="t"><p class="label">vii · Hợp tác mở điểm</p><h2 style="margin-top:20px">Mang Ansan về khu phố của bạn</h2></div></div>
   <div class="ch paper partner" style="padding-top:112px">
     <div class="p-grid">
       <p class="lead">Ansan chuyển giao mô hình, đào tạo, sản phẩm, thiết bị và marketing. Mỗi điểm là một đơn vị kinh doanh độc lập, liên kết bằng hợp đồng hợp tác.</p>
@@ -759,7 +762,7 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink leaders" id="ban-lanh-dao" style="border-top:1px solid var(--line-ink)">
-  <span class="num">ix</span>
+  <span aria-hidden="true" class="num">ix</span>
   <div class="sec-head"><div><p class="label">Ban lãnh đạo <span class="draft">Dự thảo · chỉ đăng khi HĐQT thông qua</span></p><h2>Những người đứng sau Ansan</h2></div><a class="link" href="ban-lanh-dao.html">Xem bộ máy <span>→</span></a></div>
   <ul>
     <li><figure class="ph" aria-label="Ảnh chân dung — chờ bổ sung"><svg aria-hidden="true"><use href="#sym"/></svg><figcaption>Ảnh chân dung<br>chờ bổ sung</figcaption></figure><span class="role">Chủ tịch Hội đồng Quản trị</span><h3>Bùi Thị Yến</h3></li>
@@ -771,7 +774,7 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch paper standards" id="chuan-muc">
-  <span class="num">x</span>
+  <span aria-hidden="true" class="num">x</span>
   <div class="sec-head"><div><p class="label">Chuẩn mực &amp; đối tác</p><h2>Một tiêu chuẩn<br>cho mọi điểm</h2></div></div>
   <ol>
     <li><b>01</b><h3>Bộ tiêu chuẩn vận hành</h3><p>Quy trình 10 liệu trình, phiếu đánh giá thể trạng và sàng lọc an toàn trước mỗi liệu trình.</p></li>
@@ -788,7 +791,7 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink news" id="kien-thuc" style="border-top:1px solid var(--line-ink)">
-  <span class="num">xi</span>
+  <span aria-hidden="true" class="num">xi</span>
   <div class="sec-head"><div><p class="label">Góc dưỡng sinh &amp; tin mới</p><h2>Đọc chậm, sống khoẻ</h2></div><a class="link" href="tin-tuc.html">Đọc thêm <span>→</span></a></div>
   <ul>
     <li><figure class="grade"><img src="../assets/tam-rong.jpg" alt="Không gian Tâm" loading="lazy"></figure><span class="meta">Tin hoạt động · 20/10/2026</span><h3>Ansan và Trường Trung cấp Y khoa Việt Nam ký biên bản ghi nhớ hợp tác đào tạo</h3><a class="link" href="bai-viet-mau.html">Đọc thêm <span>→</span></a></li>
@@ -799,7 +802,7 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch paper contact" id="lien-he">
-  <span class="num">xii</span>
+  <span aria-hidden="true" class="num">xii</span>
   <div class="c-grid">
     <div>
       <h2>Để Ansan <em>gọi lại</em> cho bạn</h2>
@@ -811,17 +814,19 @@ html{background:var(--nau)}
       <div class="field"><label for="w">Bạn cần</label><select id="w"><option>Đặt lịch trải nghiệm</option><option>Hợp tác mở điểm</option><option>Học nghề</option><option>Khác</option></select></div>
       <label class="agree"><input type="checkbox" required> Tôi đồng ý để Ansan liên hệ và xử lý thông tin này cho mục đích tư vấn.</label>
       <button class="btn" type="submit">Gửi</button>
-      <p class="sent">Đã nhận. (Bản thiết kế — chưa gửi đi đâu.)</p>
+      <p class="sent" role="status">Đã nhận. (Bản thiết kế — chưa gửi đi đâu.)</p>
     </form>
   </div>
 </section>
 
+</main>
+
 <footer class="ink">
   <div class="f-top">
-    <div><a class="brand" href="#"><img class="s" src="../assets/logo-symbol.png" alt=""><img class="t" src="../assets/logo-ansan-vector.svg" alt="Ansan"></a><p>Sức khoẻ vàng khởi ngàn hạnh phúc.</p></div>
-    <div><h5>Ansan</h5><a href="ve-ansan.html">Về Ansan</a><a href="duong-sinh.html">Dưỡng Sinh</a><a href="hop-tac.html">Hợp tác</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a><a href="ban-lanh-dao.html">Ban lãnh đạo</a><a href="phap-ly.html">Pháp nhân</a><a href="doi-tac.html">Đối tác</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
-    <div><h5>Chính sách</h5><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a></div>
-    <div><h5>Liên hệ</h5><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></div>
+    <div><a class="brand" href="#"><img loading="lazy" decoding="async" class="s" src="../assets/logo-symbol.png" alt=""><img loading="lazy" decoding="async" class="t" src="../assets/logo-ansan-vector.svg" alt="Ansan"></a><p>Sức khoẻ vàng khởi ngàn hạnh phúc.</p></div>
+    <div><h2 class="fh">Ansan</h2><a href="ve-ansan.html">Về Ansan</a><a href="duong-sinh.html">Dưỡng Sinh</a><a href="hop-tac.html">Hợp tác</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Edu</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Sản phẩm</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Thiết bị</a><a class="dev tip-up" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Du lịch</a><a href="ban-lanh-dao.html">Ban lãnh đạo</a><a href="phap-ly.html">Pháp nhân</a><a href="doi-tac.html">Đối tác</a><a href="tuyen-dung.html">Tuyển dụng</a></div>
+    <div><h2 class="fh">Chính sách</h2><a href="chinh-sach.html#bao-mat">Bảo mật dữ liệu</a><a href="chinh-sach.html#dieu-khoan">Điều khoản</a><a href="chinh-sach.html#the">Chính sách thẻ</a></div>
+    <div><h2 class="fh">Liên hệ</h2><ul><li>Tầng 6, MD Complex, 68 Nguyễn Cơ Thạch, P. Từ Liêm, Hà Nội</li><li>Cơ sở mẫu: L7-18 KĐT mới Đại Kim, P. Định Công</li><li>0936 262 499</li></ul></div>
   </div>
   <div class="legal"><span>ANSAN là thương hiệu của Công ty CP Nghiên cứu Ứng dụng Công nghệ Sức khỏe Việt Nam (VHTRA., JSC) — MSDN 0111322732.</span><span>Dịch vụ mang tính chăm sóc, hỗ trợ; không thay thế chẩn đoán và điều trị y khoa.</span></div>
 </footer>

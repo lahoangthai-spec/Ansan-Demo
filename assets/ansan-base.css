@@ -18,14 +18,14 @@ button,input,select,textarea{font:inherit;font-variant-numeric:lining-nums}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.1;font-variant-numeric:lining-nums}
 p{max-width:62ch}
 em{font-style:italic;color:var(--dong)}
-:focus-visible{outline:1px solid var(--dong);outline-offset:3px}
+:focus-visible{outline:2px solid var(--dong);outline-offset:3px}
 
 .ink{background:var(--nau);color:var(--kem)}
 .ink h1,.ink h2,.ink h3{color:var(--kem)}
 .paper{background:var(--kem);color:var(--nau)}
 .paper h1,.paper h2,.paper h3{color:var(--nau)}
 
-.label{font:600 11px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--kem);font-variant-numeric:lining-nums}
+.label{font:600 12px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--kem);font-variant-numeric:lining-nums}
 .paper .label{color:var(--nau-dat)}
 .link{display:inline-flex;gap:12px;align-items:center;font-weight:500;font-size:16px;border-bottom:1px solid var(--dong);padding-bottom:6px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:16px 32px;border:0;cursor:pointer;font:600 15px/1.2 var(--sans);background:var(--kem);color:var(--nau);font-variant-numeric:lining-nums}
@@ -34,7 +34,7 @@ em{font-style:italic;color:var(--dong)}
 .paper .btn:hover{background:var(--nau-dat);color:var(--kem)}
 .chip{display:inline-block;background:var(--nau);color:var(--kem);padding:4px 10px;font-size:12px}
 .grade img,img.grade{filter:sepia(.12) saturate(.92) contrast(1.03)}
-.disclaimer{font-size:14px;line-height:1.55}
+.disclaimer{font-size:15px;line-height:1.55}
 
 /* ---------- header (fixed · solid once moved · hides on scroll down, returns on scroll up) ---------- */
 header{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px var(--g);background:none;
@@ -99,8 +99,8 @@ header nav a:hover,header nav a[aria-current="page"]{text-decoration:underline;t
 .field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid var(--dong);background:none;font-size:18px;padding:10px 0;color:var(--nau);border-radius:0}
 .field textarea{resize:vertical;min-height:84px;line-height:1.5}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;box-shadow:inset 0 -1px 0 var(--dong)}
-.field .hint{font-size:14px;color:var(--nau-dat)}
-.agree{display:flex;gap:12px;font-size:14px;line-height:1.5;color:var(--nau-dat);align-items:flex-start;cursor:pointer}
+.field .hint{font-size:15px;color:var(--nau-dat)}
+.agree{display:flex;gap:12px;font-size:15px;line-height:1.5;color:var(--nau-dat);align-items:flex-start;cursor:pointer}
 .agree input{appearance:none;width:18px;height:18px;border:1px solid var(--dong);margin-top:2px;flex:none;cursor:pointer;background:var(--kem)}
 .agree input:checked{background:var(--nau);box-shadow:inset 0 0 0 3px var(--kem)}
 /* choice tiles (radio) */
@@ -108,11 +108,11 @@ header nav a:hover,header nav a[aria-current="page"]{text-decoration:underline;t
 .choice input{position:absolute;inset:0;appearance:none;margin:0;cursor:pointer}
 .choice .tile{display:block;padding:20px 22px;box-shadow:inset 0 0 0 1px var(--dong);background:var(--kem);color:var(--nau);transition:background-color .25s,color .25s}
 .choice input:checked+.tile{background:var(--nau);color:var(--kem);box-shadow:none}
-.choice input:focus-visible+.tile{outline:1px solid var(--nau);outline-offset:3px}
+.choice input:focus-visible+.tile{outline:2px solid var(--nau);outline-offset:3px}
 .choice:hover .tile{box-shadow:inset 0 0 0 1px var(--nau)}
 .choice input:checked+.tile .sub{color:var(--kem)}
 .tile b{display:block;font:400 22px/1.2 var(--serif);font-variant-numeric:lining-nums}
-.tile .sub{display:block;margin-top:6px;font-size:14px;line-height:1.45;color:var(--nau-dat)}
+.tile .sub{display:block;margin-top:6px;font-size:15px;line-height:1.45;color:var(--nau-dat)}
 .tile .pr{display:block;margin-top:10px;font-weight:600;font-size:15px;font-variant-numeric:lining-nums}
 
 /* ---------- footer ---------- */
@@ -120,7 +120,7 @@ footer{padding:96px var(--g) 40px}
 .f-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.4fr;gap:48px;padding-bottom:64px;box-shadow:inset 0 -1px 0 var(--dong)}
 .f-top .brand .t{width:120px}.f-top .brand .s{width:40px}
 .f-top p{font-size:15px;margin-top:20px}
-.f-top h5{font:600 11px var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+.f-top .fh{font:600 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px;color:inherit}
 .f-top a,.f-top li{display:block;font-size:15px;padding:5px 0;list-style:none}
 .f-top a:hover{text-decoration:underline;text-decoration-color:var(--dong);text-underline-offset:4px}
 .f-top a.brand{display:flex;padding:0}
@@ -141,11 +141,11 @@ footer{padding:96px var(--g) 40px}
 .head{display:grid;grid-template-columns:7fr 4fr;gap:6vw;align-items:end;margin-bottom:64px}
 .head p{font-size:17px}
 .paper .head p,.paper .muted{color:var(--nau-dat)}
-.branch{display:inline-block;background:var(--xanh);color:var(--kem);font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:7px 10px}
+.branch{display:inline-block;background:var(--xanh);color:var(--kem);font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:7px 10px}
 
 /* page hero with photo (photo darkened by its own filter, never by a colour layer) */
 .phero{position:relative;min-height:min(86svh,820px);display:flex;align-items:flex-end;overflow:hidden;background:var(--nau)}
-.phero>img{position:absolute;inset:0;filter:brightness(.5) contrast(1.05)}
+.phero>img{position:absolute;inset:0;filter:brightness(.34) contrast(1.05)}
 .phero .in{position:relative;z-index:1;width:100%;padding:170px var(--g) 64px;display:grid;grid-template-columns:8fr 4fr;gap:6vw;align-items:end}
 .phero h1{font-size:clamp(44px,5.4vw,88px);margin:22px 0 0}
 .phero p{font-size:18px;max-width:440px}
@@ -169,7 +169,7 @@ footer{padding:96px var(--g) 40px}
 .paper .grid-list li+li{box-shadow:inset 0 -1px 0 var(--dong),inset 1px 0 0 var(--dong)}
 .grid-list i{font:italic 400 24px var(--serif);color:var(--dong);font-variant-numeric:lining-nums}
 .grid-list h3{font-size:clamp(24px,2.2vw,30px);margin:12px 0 8px}
-.grid-list p{font-size:15px}
+.grid-list p{font-size:16px}
 .paper .grid-list p{color:var(--nau-dat)}
 
 /* split: photo + text */
@@ -186,14 +186,14 @@ footer{padding:96px var(--g) 40px}
 /* definition rows */
 .rows div{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:14px 0;font-size:16px;box-shadow:inset 0 -1px 0 var(--nau-dat)}
 .paper .rows div{box-shadow:inset 0 -1px 0 var(--dong)}
-.rows dt{font-size:14px}
+.rows dt{font-size:15px}
 .paper .rows dt{color:var(--nau-dat)}
 
 /* priced menu list */
 .ledger{list-style:none;box-shadow:inset 0 1px 0 var(--dong)}
 .ledger li{display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:baseline;padding:18px 0;box-shadow:inset 0 -1px 0 var(--dong);font-size:18px}
 .ledger li>span:first-child{font:italic 400 17px var(--serif);color:var(--nau-dat);font-variant-numeric:lining-nums}
-.ledger small{font-size:14px;color:var(--nau-dat)}
+.ledger small{font-size:15px;color:var(--nau-dat)}
 .ink .ledger li{box-shadow:inset 0 -1px 0 var(--nau-dat)}
 .ink .ledger li>span:first-child,.ink .ledger small{color:var(--kem)}
 
@@ -203,19 +203,19 @@ footer{padding:96px var(--g) 40px}
 .tiers>div+div{box-shadow:inset 1px 0 0 var(--dong)}
 .tiers b{display:block;font:400 clamp(44px,4.4vw,64px)/1 var(--serif);color:var(--nau);letter-spacing:-.02em;margin:14px 0 12px;font-variant-numeric:lining-nums}
 .ink .tiers b{color:var(--dong)}
-.tiers p{font-size:15px}
+.tiers p{font-size:16px}
 
 /* placeholder for content awaiting approval / assets */
 .pending{box-shadow:inset 0 0 0 1px var(--dong);padding:28px 28px 30px;display:grid;gap:10px}
 .pending .label{color:inherit}
 .paper .pending{color:var(--nau)}
-.pending p{font-size:15px}
+.pending p{font-size:16px}
 
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 24px;align-items:start}
 .gallery figure{margin:0;display:flex;flex-direction:column}
 .gallery .ph{aspect-ratio:4/3;overflow:hidden}
-.gallery figcaption{font-size:14px;margin-top:12px}
+.gallery figcaption{font-size:15px;margin-top:12px}
 .paper .gallery figcaption{color:var(--nau-dat)}
 .gallery .wide{grid-column:span 2}
 .gallery .wide .ph{aspect-ratio:8/3}
@@ -227,7 +227,7 @@ footer{padding:96px var(--g) 40px}
 .next{display:grid;grid-template-columns:repeat(3,1fr);gap:0;box-shadow:inset 0 1px 0 var(--nau-dat)}
 .next a{padding:28px 28px 32px 0;display:block}
 .next a+a{padding-left:28px;box-shadow:inset 1px 0 0 var(--nau-dat)}
-.next span{display:block;font:600 11px var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.next span{display:block;font:600 12px var(--sans);letter-spacing:.16em;text-transform:uppercase}
 .next b{display:block;font:400 clamp(26px,2.4vw,34px)/1.15 var(--serif);margin-top:12px}
 .next a:hover b{text-decoration:underline;text-decoration-color:var(--dong);text-underline-offset:6px}
 .map{aspect-ratio:16/8;box-shadow:inset 0 0 0 1px var(--nau-dat);display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;padding:16px}
@@ -270,6 +270,7 @@ footer{padding:96px var(--g) 40px}
 /* =====================================================================
    Motion (only when ansan-base.js adds .motion) — clip-path + transform, no fading
    ===================================================================== */
+.rv-line{display:block} /* each <br> line of a heading is its own block — also without motion, so words never run together */
 .motion .rv-line{display:block;overflow:hidden;padding:.2em 0 .1em;margin:-.2em 0 -.1em}
 .motion .rv-line>span{display:block;transform:translate3d(0,110%,0);transition:transform 1.15s var(--ease)}
 .motion .is-in>.rv-line>span{transform:none}
@@ -345,9 +346,14 @@ html{background:var(--nau)}
 @media (max-width:900px){
   .fab .fab-z{display:none}
   .label{font-size:12px}
-  .meta,.st,.chip-wait,.branch,.role,.wait,.tag,footer h5,.next a>span,.courses span,.org span{font-size:12px!important}
+  .meta,.st,.chip-wait,.branch,.role,.wait,.tag,footer .fh,.next a>span,.courses span,.org span{font-size:12px!important}
   .link{position:relative}
   .link::before{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
   .crumb a{position:relative}
   .crumb a::before{content:"";position:absolute;left:-4px;right:-4px;top:-10px;bottom:-10px}
 }
+
+/* Audit 21/11: chữ nghiêng nằm trong đoạn văn cỡ thường giữ màu chữ của đoạn (đồng chỉ dành cho chữ ≥24px) */
+.ink-em{color:inherit}
+/* Audit 21/11: trên điện thoại chữ hero nằm trên phần sáng hơn của ảnh -> tối ảnh thêm (chỉ bằng filter của ảnh, không phủ màu) */
+@media (max-width:900px){.phero>img{filter:brightness(.29) contrast(1.05)}}
