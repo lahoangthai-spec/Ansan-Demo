@@ -126,11 +126,11 @@ header nav a:hover{color:var(--copper)}
 .big65 small{display:block;font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--on-ink-dim);margin-top:64px}
 /* the line runs only from the first dot's centre to the last dot's centre (--ta/--tb set by JS) */
 .timeline{list-style:none;position:relative}
-.timeline::before{content:"";position:absolute;left:-1px;top:var(--ta,16px);bottom:var(--tb,0px);width:1px;background:var(--dong)}
+.timeline::before{content:"";position:absolute;left:-1px;top:var(--ta,20px);bottom:var(--tb,0px);width:1px;background:var(--dong)}
 .timeline li{position:relative;padding:0 0 40px 40px}
 .timeline li:last-child{padding-bottom:0}
-.timeline li::before{content:"";position:absolute;left:-5px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1px solid var(--copper)}
-.timeline h3{font:400 28px/1.2 var(--serif);color:var(--kem)}
+.timeline li::before{content:"";position:absolute;left:-6px;top:14.5px;width:11px;height:11px;box-sizing:border-box;border-radius:50%;background:var(--ink);border:1px solid var(--copper)}
+.timeline h3{font:400 28px/1.2 var(--serif);color:var(--dong)}
 .timeline h3 i{font-style:italic;color:var(--copper);margin-right:12px;font-size:18px}
 .timeline p{margin-top:6px}
 .proc-intro{margin-bottom:48px}
@@ -277,12 +277,12 @@ body,h1,h2,h3,h4,.serif,.num,.big65,.timeline h3,.timeline h3 i,.menu li span,.p
 .motion .rv-line.in>span{transform:none}
 /* 6 timeline draw */
 .motion .timeline::before{background:var(--nau-dat)}
-.motion .timeline::after{content:"";position:absolute;left:-1px;top:var(--ta,16px);bottom:var(--tb,0px);width:1px;background:var(--copper);transform-origin:top;transform:scaleY(var(--tl,0))}
+.motion .timeline::after{content:"";position:absolute;left:-1px;top:var(--ta,20px);bottom:var(--tb,0px);width:1px;background:var(--copper);transform-origin:top;transform:scaleY(var(--tl,0))}
 .motion .timeline li::before{transition:background .5s var(--ease),box-shadow .5s var(--ease)}
 .motion .timeline li.lit::before{background:var(--copper)}
 /* steps not yet reached: solid nâu đất (no transparency) · reached: solid kem */
 .motion .timeline h3,.motion .timeline h3 i,.motion .timeline p{color:var(--nau-dat);transition:color .6s var(--ease)}
-.motion .timeline li.lit h4,.motion .timeline li.lit h4 i,.motion .timeline li.lit p{color:var(--kem)}
+.motion .timeline li.lit h3,.motion .timeline li.lit h3 i{color:var(--dong)}.motion .timeline li.lit p{color:var(--kem)}
 /* 7 ledger rules draw + rows */
 .motion .menu li{position:relative;border-bottom-color:var(--paper)}
 .motion .menu li::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--line-paper);transform:scaleX(0);transform-origin:left;transition:transform 1.1s var(--ease)}
@@ -315,7 +315,7 @@ header nav{color:var(--kem)}header nav a:hover{color:var(--kem);text-decoration:
 .hero p{color:var(--kem)}
 .cap{color:var(--kem)}
 /* small type on nâu đậm is solid kem; đồng only for large type */
-.eco li span,.courses span,.timeline h3 i{color:var(--kem)}
+.eco li span,.courses span{color:var(--kem)}
 .big65 small,.place dt,.offer small{color:var(--kem)}
 /* paper sections */
 .paper .btn,.price .btn,form .btn{background:var(--nau);color:var(--kem)}
@@ -659,13 +659,13 @@ html{background:var(--nau)}
   <div class="spaces">
     <article class="sp sp-a">
       <figure class="grade reveal"><img loading="lazy" decoding="async" data-par src="../assets/quay-tra.jpg" alt="Quầy trà và kệ trà âm tường"></figure>
-      <div class="txt"><div class="meta"><span class="label">Tầng 1 · Không gian Tâm</span><span class="rc">Ảnh phối cảnh</span></div>
+      <div class="txt"><div class="meta"><span class="label">Tầng 1 · Không gian Tâm</span></div>
       <h3>Thưởng trà, workshop, ngâm chân dược liệu</h3>
       <p>Phòng trà khoảng 20 chỗ, bàn trà dài cho workshop cộng đồng, ban công xanh để ngâm chân.</p></div>
     </article>
     <article class="sp sp-b">
       <figure class="grade reveal"><img loading="lazy" decoding="async" data-par src="../assets/than-phong.jpg" alt="Phòng chăm sóc ba giường, rèm riêng tư"></figure>
-      <div class="meta"><span class="label">Tầng 2 · Không gian Thân</span><span class="rc">Ảnh phối cảnh</span></div>
+      <div class="meta"><span class="label">Tầng 2 · Không gian Thân</span></div>
       <h3>Chăm sóc Cơ — Xương — Khớp</h3>
       <p>Sáu giường, rèm riêng tư. Làm ấm, thư giãn cơ, thiết bị hỗ trợ và thủ pháp Y học cổ truyền.</p>
     </article>
@@ -681,7 +681,7 @@ html{background:var(--nau)}
       <ol class="timeline">
         <li><h3><i>01</i>Đánh giá thể trạng</h3><p>Lắng nghe, đo huyết áp, sàng lọc an toàn.</p></li>
         <li><h3><i>02</i>Phác đồ riêng</h3><p>Liệu trình và cường độ phù hợp từng người.</p></li>
-        <li><h3><i>03</i>Chăm sóc</h3><p>Làm ấm, thư giãn cơ, công nghệ hỗ trợ, thủ pháp YHCT.</p></li>
+        <li><h3><i>03</i>Chăm sóc</h3><p>Làm ấm, thư giãn cơ, thiết bị hỗ trợ, thủ pháp Y học cổ truyền.</p></li>
         <li><h3><i>04</i>Hướng dẫn tại nhà</h3><p>Tư thế, bài vận động nhẹ giữa các buổi.</p></li>
       </ol>
     </div>
@@ -737,7 +737,7 @@ html{background:var(--nau)}
 </section>
 
 <section id="hop-tac">
-  <div class="pband reveal"><img loading="lazy" decoding="async" class="grade" data-par src="../assets/ban-cong.jpg" alt="Ban công xanh ngâm chân" ><span class="rc chip" style="position:absolute;right:var(--g);top:24px;z-index:2">Ảnh phối cảnh thiết kế</span><div class="t"><p class="label">vii · Hợp tác mở điểm</p><h2 style="margin-top:20px">Mang Ansan về khu phố của bạn</h2></div></div>
+  <div class="pband reveal"><img loading="lazy" decoding="async" class="grade" data-par src="../assets/ban-cong.jpg" alt="Ban công xanh ngâm chân" ><div class="t"><p class="label">vii · Hợp tác mở điểm</p><h2 style="margin-top:20px">Mang Ansan về khu phố của bạn</h2></div></div>
   <div class="ch paper partner" style="padding-top:112px">
     <div class="p-grid">
       <p class="lead">Ansan chuyển giao mô hình, đào tạo, sản phẩm, thiết bị và marketing. Mỗi điểm là một đơn vị kinh doanh độc lập, liên kết bằng hợp đồng hợp tác.</p>
@@ -777,7 +777,7 @@ html{background:var(--nau)}
   <span aria-hidden="true" class="num">x</span>
   <div class="sec-head"><div><p class="label">Chuẩn mực &amp; đối tác</p><h2>Một tiêu chuẩn<br>cho mọi điểm</h2></div></div>
   <ol>
-    <li><b>01</b><h3>Bộ tiêu chuẩn vận hành</h3><p>Quy trình 10 liệu trình, phiếu đánh giá thể trạng và sàng lọc an toàn trước mỗi liệu trình.</p></li>
+    <li><b>01</b><h3>Bộ tiêu chuẩn vận hành</h3><p>Quy trình 4 bước, menu 10 liệu trình, phiếu đánh giá thể trạng và sàng lọc an toàn trước mỗi liệu trình.</p></li>
     <li><b>02</b><h3>Khách bí mật &amp; kiểm tra kỹ thuật</h3><p>Định kỳ đánh giá quy trình dịch vụ và tay nghề kỹ thuật viên theo bộ tiêu chí, có ngưỡng đạt.</p></li>
     <li><b>03</b><h3>Tuân thủ truyền thông</h3><p>Không hứa chữa khỏi; câu miễn trừ chuẩn; nội dung sức khoẻ được duyệt chuyên môn trước khi phát hành.</p></li>
     <li><b>04</b><h3>Minh bạch tài chính</h3><p>Giá niêm yết công khai; quản lý tiền thẻ trả trước theo quy chế, đối soát định kỳ.</p></li>
@@ -798,7 +798,7 @@ html{background:var(--nau)}
     <li><figure class="grade"><img src="../assets/loi-vao.jpg" alt="Lối vào cơ sở mẫu" loading="lazy"></figure><span class="meta">Tin hoạt động · 11/2026</span><h3>Cơ sở mẫu Nguyễn Xiển chuẩn bị khai trương</h3><a class="link" href="lp-khai-truong-nguyen-xien.html">Đọc thêm <span>→</span></a></li>
     <li><figure class="grade"><img src="../assets/than-giuong.jpg" alt="Không gian Thân" loading="lazy"></figure><span class="meta">Góc dưỡng sinh</span><h3>Đau mỏi vai gáy ở dân văn phòng: vài thói quen nhỏ mỗi ngày</h3><a class="link dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Đọc thêm <span>→</span></a></li>
   </ul>
-  <p class="fine-ink">Ảnh phối cảnh thiết kế. Tiêu đề bài là minh hoạ — thay bằng bài đã duyệt khi đăng.</p>
+  <p class="fine-ink">Tiêu đề bài là minh hoạ — thay bằng bài đã duyệt khi đăng.</p>
 </section>
 
 <section class="ch paper contact" id="lien-he">
@@ -894,7 +894,7 @@ const pars=[...document.querySelectorAll('[data-par]')];
 const nums=[...document.querySelectorAll('.num')];
 /* ---- layout cache: geometry that only changes on resize / content reflow is measured once,
         so the per-frame scroll work below is read-then-write with no forced layout ---- */
-const DOT=16.5;
+const DOT=20;
 let L={};
 function measure(){
   const y=scrollY;
