@@ -310,7 +310,9 @@ header nav{color:var(--kem)}header nav a:hover{color:var(--kem);text-decoration:
 .chip{background:var(--nau);color:var(--kem);padding:4px 10px;font-size:12px}
 .rc.chip{color:var(--kem)}
 /* photos carry the darkness themselves */
-.hero .img img{filter:sepia(.12) saturate(.92) brightness(.42) contrast(1.08)}
+.hero .img img{filter:sepia(.12) saturate(.92) brightness(.38) contrast(1.08)}
+/* điện thoại: khung dọc lấy phần trần tranh dân gian (sáng, nhiều hoạ tiết) ngay sau chữ, làm tối thêm để chữ đồng đạt ≥3:1 */
+@media (max-width:900px){.hero .img img{filter:sepia(.12) saturate(.92) brightness(.28) contrast(1.08)}}
 .pband img{filter:sepia(.12) saturate(.92) brightness(.32) contrast(1.08)}
 .hero p{color:var(--kem)}
 .cap{color:var(--kem)}
@@ -720,7 +722,7 @@ html{background:var(--nau)}
 </section>
 
 <section class="place ink" id="co-so">
-  <figure class="grade reveal" style="position:relative"><img loading="lazy" decoding="async" data-par src="../assets/loi-vao.jpg" alt="Lối vào cơ sở Ansan dưới mái ngói"><span class="rc chip" style="position:absolute;left:var(--g);bottom:20px">Ảnh phối cảnh thiết kế</span></figure>
+  <figure class="grade reveal" style="position:relative"><img loading="lazy" decoding="async" data-par src="../assets/loi-vao.jpg" alt="Quầy trà dưới mái ngói, biển ANSAN, cửa sổ tròn hoa sen"><span class="rc chip" style="position:absolute;left:var(--g);bottom:20px">Ảnh phối cảnh thiết kế</span></figure>
   <div class="txt">
     <div>
       <p class="label">vi · Cơ sở mẫu · khai trương 11/2026</p>
@@ -795,7 +797,7 @@ html{background:var(--nau)}
   <div class="sec-head"><div><p class="label">Góc dưỡng sinh &amp; tin mới</p><h2>Đọc chậm, sống khoẻ</h2></div><a class="link" href="tin-tuc.html">Đọc thêm <span>→</span></a></div>
   <ul>
     <li><figure class="grade"><img src="../assets/tam-rong.jpg" alt="Không gian Tâm" loading="lazy"></figure><span class="meta">Tin hoạt động · 20/10/2026</span><h3>Ansan và Trường Trung cấp Y khoa Việt Nam ký biên bản ghi nhớ hợp tác đào tạo</h3><a class="link" href="bai-viet-mau.html">Đọc thêm <span>→</span></a></li>
-    <li><figure class="grade"><img src="../assets/loi-vao.jpg" alt="Lối vào cơ sở mẫu" loading="lazy"></figure><span class="meta">Tin hoạt động · 11/2026</span><h3>Cơ sở mẫu Nguyễn Xiển chuẩn bị khai trương</h3><a class="link" href="lp-khai-truong-nguyen-xien.html">Đọc thêm <span>→</span></a></li>
+    <li><figure class="grade"><img src="../assets/loi-vao.jpg" alt="Không gian Tâm, cơ sở mẫu Nguyễn Xiển" loading="lazy"></figure><span class="meta">Tin hoạt động · 11/2026</span><h3>Cơ sở mẫu Nguyễn Xiển chuẩn bị khai trương</h3><a class="link" href="lp-khai-truong-nguyen-xien.html">Đọc thêm <span>→</span></a></li>
     <li><figure class="grade"><img src="../assets/than-giuong.jpg" alt="Không gian Thân" loading="lazy"></figure><span class="meta">Góc dưỡng sinh</span><h3>Đau mỏi vai gáy ở dân văn phòng: vài thói quen nhỏ mỗi ngày</h3><a class="link dev" tabindex="0" role="link" aria-disabled="true" data-tip="Đang phát triển">Đọc thêm <span>→</span></a></li>
   </ul>
   <p class="fine-ink">Tiêu đề bài là minh hoạ — thay bằng bài đã duyệt khi đăng.</p>
