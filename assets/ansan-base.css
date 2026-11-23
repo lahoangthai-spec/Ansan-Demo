@@ -147,7 +147,7 @@ footer{padding:96px var(--g) 40px}
 .phero{position:relative;min-height:min(86svh,820px);display:flex;align-items:flex-end;overflow:hidden;background:var(--nau)}
 .phero>img{position:absolute;inset:0;filter:brightness(.34) contrast(1.05)}
 .phero .in{position:relative;z-index:1;width:100%;padding:170px var(--g) 64px;display:grid;grid-template-columns:8fr 4fr;gap:6vw;align-items:end}
-.phero h1{font-size:clamp(44px,5.4vw,88px);margin:22px 0 0}
+.phero h1{font-size:clamp(44px,5.4vw,88px);margin:36px 0 0}
 .phero p{font-size:18px;max-width:440px}
 .phero .cap{position:absolute;right:var(--g);top:118px;z-index:1;font-size:12px;letter-spacing:.04em}
 .crumb{display:flex;gap:10px;font-size:14px;flex-wrap:wrap}
@@ -263,7 +263,7 @@ footer{padding:96px var(--g) 40px}
 /* text-only page hero */
 .thero{background:var(--nau);color:var(--kem)}
 .thero .in{padding:190px var(--g) 72px;display:grid;grid-template-columns:8fr 4fr;gap:6vw;align-items:end}
-.thero h1{font-size:clamp(44px,5.4vw,88px);margin-top:22px}
+.thero h1{font-size:clamp(44px,5.4vw,88px);margin-top:36px}
 .thero p{font-size:18px;max-width:440px}
 @media (max-width:900px){.thero .in{grid-template-columns:1fr;gap:28px;padding:140px var(--g) 48px}}
 
