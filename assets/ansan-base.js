@@ -103,69 +103,7 @@ window.__ansanReveal=scope=>{start();setup(scope,true);
     .forEach(el=>{const r=el.getBoundingClientRect();if(r.top<vh*.92&&r.bottom>-vh){el.classList.add('is-in');io&&io.unobserve(el);}});},120);};
 })();
 
-/* =====================================================================
-   Sub-tabs (the section bar under the hero): switching between pages of the same section
-   keeps the header and the tab bar in place and swaps only what is below it —
-   no page-transition curtain. The URL, title and history still change, so every tab
-   keeps its own address and Back/Forward work; any failure falls back to a normal load.
-   ===================================================================== */
-(()=>{
-const bar=document.querySelector('main .subnav');
-if(!bar||!window.fetch||!window.DOMParser||!history.pushState) return;
-const main=bar.parentElement;
-const path=h=>new URL(h,location.href).pathname;
-const inGroup=a=>a&&!a.classList.contains('go')&&a.closest('.subnav')===bar&&new URL(a.href,location.href).origin===location.origin;
-const cache=new Map();
-const get=url=>{const k=path(url);if(!cache.has(k))cache.set(k,fetch(url,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.text();}));return cache.get(k);};
-/* warm the cache when a tab is hovered or touched */
-['pointerover','touchstart','focusin'].forEach(ev=>bar.addEventListener(ev,e=>{const a=e.target.closest('a');if(inGroup(a))get(a.href).catch(()=>{});},{passive:true}));
-
-let busy=false;
-async function swap(url,push){
-  if(busy)return; busy=true;
-  let doc;
-  try{doc=new DOMParser().parseFromString(await get(url),'text/html');}catch(err){location.href=url;return;}
-  const nmain=doc.querySelector('main'), nbar=nmain&&nmain.querySelector(':scope > .subnav');
-  if(!nbar){location.href=url;return;}
-  const offset=bar.getBoundingClientRect().top;
-  /* head: title, description, share tags, this page's own styles */
-  document.title=doc.title;
-  ['meta[name="description"]','meta[property="og:title"]','meta[property="og:description"]','meta[property="og:image"]'].forEach(s=>{
-    const a=document.head.querySelector(s),b=doc.head.querySelector(s);if(a&&b)a.setAttribute('content',b.getAttribute('content'));});
-  const st=document.head.querySelector('style'),nst=doc.head.querySelector('style');if(st&&nst)st.textContent=nst.textContent;
-  /* everything above the bar (the hero) is replaced as it stands — no intro animation */
-  while(main.firstElementChild&&main.firstElementChild!==bar) main.firstElementChild.remove();
-  for(const n of [...nmain.children]){if(n===nbar)break;const m=document.importNode(n,true);m.classList.add('swap-static');main.insertBefore(m,bar);}
-  /* the bar keeps its place; only which tab is current changes */
-  const sl=bar.scrollLeft;
-  bar.innerHTML=nbar.innerHTML;
-  /* phones: the bar scrolls sideways — keep the chosen tab in view */
-  const cur=bar.querySelector('[aria-current]');bar.scrollLeft=sl;
-  if(cur&&(cur.offsetLeft<bar.scrollLeft||cur.offsetLeft+cur.offsetWidth>bar.scrollLeft+bar.clientWidth)) bar.scrollLeft=Math.max(0,cur.offsetLeft-24);
-  /* everything below the bar is the new page */
-  while(bar.nextSibling) bar.nextSibling.remove();
-  let after=false;
-  for(const n of [...nmain.childNodes]){if(n===nbar){after=true;continue;}if(after)main.appendChild(document.importNode(n,true));}
-  if(push) history.pushState({ansanTab:1},'',url);
-  /* keep the bar where it was on screen; if it had scrolled away, bring it to the top */
-  const html=document.documentElement,sb=html.style.scrollBehavior;html.style.scrollBehavior='auto';
-  scrollTo(0,bar.getBoundingClientRect().top+scrollY-Math.max(0,offset));
-  html.style.scrollBehavior=sb;
-  /* this page's own scripts (forms on the new content) */
-  [...doc.body.querySelectorAll('script:not([src])')].forEach(o=>{const s=document.createElement('script');s.textContent=o.textContent;document.body.appendChild(s);s.remove();});
-  if(window.__ansanReveal) window.__ansanReveal(main);
-  busy=false;
-}
-document.addEventListener('click',e=>{
-  const a=e.target.closest('a');
-  if(!inGroup(a)||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||a.target) return;
-  e.preventDefault();
-  if(path(a.href)===location.pathname) return;
-  swap(a.href,true);
-});
-history.replaceState(Object.assign({},history.state,{ansanTab:1}),'');
-addEventListener('popstate',e=>{if(e.state&&e.state.ansanTab) swap(location.href,false);});
-})();
+/* Tab con dưới hero: bấm là tải trang bình thường (đã bỏ kiểu đổi nội dung tại chỗ, 23/11) */
 
 /* "Đang phát triển" links: a tap shows the tooltip for a moment (touch screens have no hover) */
 document.addEventListener('click',e=>{const d=e.target.closest('.dev');if(!d)return;e.preventDefault();

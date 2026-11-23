@@ -299,18 +299,10 @@ footer{padding:96px var(--g) 40px}
    Page transitions (cross-document View Transitions; browsers without support navigate normally)
    the new page rises like a curtain while the old one drifts up — solid colours, no cross-fade
    ===================================================================== */
-@view-transition{navigation:auto}
 /* the UA blends old/new snapshots with plus-lighter (made the page flash bright) — use normal
    compositing; the old page simply stays while the new one rises over it */
-::view-transition-old(root),::view-transition-new(root){mix-blend-mode:normal}
-::view-transition-old(root){animation:none}
-::view-transition-new(root){animation:ansan-vt-in .65s cubic-bezier(.65,0,.35,1) both}
-@keyframes ansan-vt-in{from{transform:translate3d(0,100%,0)}to{transform:none}}
 html{background:var(--nau)}
 
-@media (prefers-reduced-motion:reduce){
-  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
-}
 
 /* quick contact (Khung §10: Zalo OA + nút gọi) — solid brand colours */
 .fab{position:fixed;right:20px;bottom:20px;z-index:18;display:flex;flex-direction:column;gap:10px}
@@ -361,3 +353,6 @@ html{background:var(--nau)}
 /* chống xuống dòng một chữ: đoạn văn ngắt dòng "đẹp", tiêu đề chia đều các dòng */
 p,li,dd,dt,figcaption,blockquote,small{text-wrap:pretty}
 h1,h2,h3,h4{text-wrap:balance}
+
+/* số hotline trong bảng thông tin: bấm để gọi */
+dd a.tel{border-bottom:1px solid var(--dong);padding-bottom:2px}
