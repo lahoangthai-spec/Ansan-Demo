@@ -162,11 +162,10 @@ footer{padding:96px var(--g) 40px}
 .subnav .go{margin-left:auto;color:var(--kem)}
 
 /* numbered grid list (steps, features) */
-.grid-list{list-style:none;display:grid;grid-template-columns:repeat(var(--cols,4),1fr);box-shadow:inset 0 1px 0 var(--dong)}
-.grid-list li{padding:32px 28px 36px 0;box-shadow:inset 0 -1px 0 var(--nau-dat)}
-.grid-list li+li{padding-left:28px;box-shadow:inset 0 -1px 0 var(--nau-dat),inset 1px 0 0 var(--nau-dat)}
-.paper .grid-list li{box-shadow:inset 0 -1px 0 var(--dong)}
-.paper .grid-list li+li{box-shadow:inset 0 -1px 0 var(--dong),inset 1px 0 0 var(--dong)}
+.grid-list{list-style:none;display:grid;grid-template-columns:repeat(var(--cols,4),1fr);box-shadow:inset 0 1px 0 var(--dong),inset 1px 0 0 var(--nau-dat)}
+.grid-list li{padding:32px 28px 36px;box-shadow:inset -1px 0 0 var(--nau-dat),inset 0 -1px 0 var(--nau-dat)}
+.paper .grid-list{box-shadow:inset 0 1px 0 var(--dong),inset 1px 0 0 var(--dong)}
+.paper .grid-list li{box-shadow:inset -1px 0 0 var(--dong),inset 0 -1px 0 var(--dong)}
 .grid-list i{font:italic 400 24px var(--serif);color:var(--dong);font-variant-numeric:lining-nums}
 .grid-list h3{font-size:clamp(24px,2.2vw,30px);margin:12px 0 8px}
 .grid-list p{font-size:16px}
@@ -242,8 +241,7 @@ footer{padding:96px var(--g) 40px}
   .phero .cap{top:auto;bottom:12px}
   .subnav{gap:24px}
   .grid-list{grid-template-columns:1fr}
-  .grid-list li,.grid-list li+li{padding:24px 0;box-shadow:inset 0 -1px 0 var(--nau-dat)}
-  .paper .grid-list li,.paper .grid-list li+li{box-shadow:inset 0 -1px 0 var(--dong)}
+  .grid-list li{padding:24px 20px}
   .split,.split.rev{grid-template-columns:1fr;min-height:0}
   .split.rev figure{order:0}
   .split figure{height:360px}

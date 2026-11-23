@@ -186,9 +186,8 @@ header nav a:hover{color:var(--copper)}
 .packs b small{font:500 14px var(--sans);color:var(--on-paper-dim)}
 .fine{font-size:14px;color:var(--on-paper-dim);margin:24px 0 36px}
 
-.packs3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-paper);border-bottom:1px solid var(--line-paper)}
-.packs3 div{padding:28px 0}
-.packs3 div+div{padding-left:32px;border-left:1px solid var(--line-paper)}
+.packs3{display:grid;grid-template-columns:repeat(3,1fr);box-shadow:inset 0 1px 0 var(--line-paper),inset 1px 0 0 var(--line-paper)}
+.packs3 div{padding:28px 32px;box-shadow:inset -1px 0 0 var(--line-paper),inset 0 -1px 0 var(--line-paper)}
 .packs3 b{display:block;font:400 clamp(64px,6.6vw,96px)/1 var(--serif);letter-spacing:-.03em;color:var(--nau);margin-top:14px}
 .packs3 b small{font:500 15px var(--sans);letter-spacing:0;color:var(--on-paper-dim);margin-left:8px}
 /* eco */
@@ -443,9 +442,8 @@ header nav{gap:30px;font-size:14px}
 .leaders h3{font-size:24px;margin-top:8px}
 
 /* 9 · chuẩn mực & đối tác (nền kem) */
-.standards ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--dong)}
-.standards li{padding:36px 36px 40px 0;border-bottom:1px solid var(--dong)}
-.standards li:not(:nth-child(3n+1)){padding-left:36px;box-shadow:inset 1px 0 0 var(--dong)}
+.standards ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);box-shadow:inset 0 1px 0 var(--dong),inset 1px 0 0 var(--dong)}
+.standards li{padding:36px 36px 40px;box-shadow:inset -1px 0 0 var(--dong),inset 0 -1px 0 var(--dong)}
 .standards li b{font:italic 400 28px/1 var(--serif);color:var(--dong);font-variant-numeric:lining-nums}
 .standards li h3{font-size:26px;margin:18px 0 10px;color:var(--nau)}
 .standards li p{font-size:16px;color:var(--nau-dat)}
@@ -476,7 +474,7 @@ header nav{gap:30px;font-size:14px}
   .leaders ul{grid-template-columns:1fr 1fr;gap:28px 16px}
   .draft{display:table;margin:10px 0 0}
   .standards ol{grid-template-columns:1fr}
-  .standards li,.standards li:not(:nth-child(3n+1)){padding:28px 0;box-shadow:none}
+  .standards li{padding:28px 20px}
   .partners{grid-template-columns:1fr;gap:40px}
   .news ul{grid-template-columns:1fr;gap:48px}
 }
@@ -490,7 +488,7 @@ header nav{gap:30px;font-size:14px}
 .glyphs{grid-template-columns:1fr}
   .sp-b{margin-top:0}
   .spaces-head{grid-template-columns:1fr}
-  .packs3{grid-template-columns:1fr}.packs3 div+div{padding-left:0;border-left:0;border-top:1px solid var(--line-paper)}
+  .packs3{grid-template-columns:1fr}.packs3 div{padding:24px 20px}
   .price{position:static}
   .name,.proc,.menu-grid,.partner .p-grid,.c-grid,.edu,.place,.spaces{grid-template-columns:1fr;gap:48px}
   .spaces{padding:0 var(--g)}

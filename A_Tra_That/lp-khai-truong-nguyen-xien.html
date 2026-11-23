@@ -77,9 +77,8 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
 .steps .big{font:400 clamp(140px,17vw,260px)/.85 var(--serif);letter-spacing:-.04em;color:var(--dong);font-variant-numeric:lining-nums}
 .steps .big .ph{font-size:.3em;letter-spacing:0;margin-left:.14em}
 .steps .big small{display:block;font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--kem);margin-top:40px}
-.steps ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0;box-shadow:inset 0 1px 0 var(--dong)}
-.steps li{padding:32px 32px 36px 0;box-shadow:inset 0 -1px 0 var(--nau-dat)}
-.steps li:nth-child(even){padding-left:32px;box-shadow:inset 0 -1px 0 var(--nau-dat),inset 1px 0 0 var(--nau-dat)}
+.steps ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0;box-shadow:inset 0 1px 0 var(--dong),inset 1px 0 0 var(--nau-dat)}
+.steps li{padding:32px 32px 36px;box-shadow:inset -1px 0 0 var(--nau-dat),inset 0 -1px 0 var(--nau-dat)}
 .steps li i{font:italic 400 24px var(--serif);color:var(--dong)}
 .steps h3{font-size:28px;margin:12px 0 8px}
 .steps li p{font-size:15px}
@@ -140,7 +139,7 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
   .journey ol{grid-template-columns:1fr;gap:48px}
   .journey figure{aspect-ratio:4/3}
   .steps ol{grid-template-columns:1fr}
-  .steps li,.steps li:nth-child(even){padding:24px 0;box-shadow:inset 0 -1px 0 var(--nau-dat)}
+  .steps li{padding:24px 20px}
   .menu ol{columns:1}
   .place figure{height:360px}
   .place .txt{padding:64px var(--g)}
