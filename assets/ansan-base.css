@@ -162,7 +162,7 @@ footer{padding:96px var(--g) 40px}
 .subnav .go{margin-left:auto;color:var(--kem)}
 
 /* numbered grid list (steps, features) */
-.grid-list{list-style:none;display:grid;grid-template-columns:repeat(var(--cols,4),1fr);box-shadow:inset 0 1px 0 var(--dong),inset 1px 0 0 var(--nau-dat)}
+.grid-list{list-style:none;display:grid;grid-template-columns:repeat(var(--cols,4),1fr);box-shadow:inset 0 1px 0 var(--nau-dat),inset 1px 0 0 var(--nau-dat)}
 .grid-list li{padding:32px 28px 36px;box-shadow:inset -1px 0 0 var(--nau-dat),inset 0 -1px 0 var(--nau-dat)}
 .paper .grid-list{box-shadow:inset 0 1px 0 var(--dong),inset 1px 0 0 var(--dong)}
 .paper .grid-list li{box-shadow:inset -1px 0 0 var(--dong),inset 0 -1px 0 var(--dong)}
