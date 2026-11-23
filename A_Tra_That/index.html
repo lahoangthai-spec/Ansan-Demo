@@ -577,6 +577,10 @@ html{background:var(--nau)}
   .crumb a::before{content:"";position:absolute;left:-4px;right:-4px;top:-10px;bottom:-10px}
 }
 @media (max-width:900px){.hero-tag .tag1,.hero-tag .sep{display:none}.hero-tag{letter-spacing:.14em;margin-bottom:26px}.hero h1 em{display:block;text-wrap:balance}.hero>.cap{left:var(--g);right:84px}}
+
+/* chống xuống dòng một chữ: đoạn văn ngắt dòng "đẹp", tiêu đề chia đều các dòng */
+p,li,dd,dt,figcaption,blockquote,small{text-wrap:pretty}
+h1,h2,h3,h4{text-wrap:balance}
 </style>
 </head>
 <body>
@@ -615,10 +619,9 @@ html{background:var(--nau)}
 <main>
 <section class="hero">
   <div class="img grade"><img src="../assets/tam-phong-tra.jpg" alt="Phòng trà dưỡng sinh, Không gian Tâm"><div class="dim"></div></div>
-  <span class="cap">Ảnh phối cảnh thiết kế — Không gian Tâm, Nguyễn Xiển</span>
   <div class="hero-copy">
     <div>
-      <p class="label hero-tag"><span class="tag1">Ansan Group</span><span class="sep"> · </span><span class="tag2">An lành để san sẻ</span></p>
+      <p class="label hero-tag"><span class="tag2">An lành để san sẻ</span></p>
       <h1>Sức khoẻ vàng<br><em>khởi ngàn hạnh phúc</em></h1>
       <p>Dưỡng sinh Y học cổ truyền, đặt vào nhịp sống hôm nay — gần nhà, theo quy trình chuẩn, có người đồng hành.</p>
       <div class="acts"><a class="btn" href="dat-lich.html">Đặt lịch trải nghiệm</a><a class="link" href="hop-tac.html">Hợp tác mở điểm <span>→</span></a><a class="link" href="#edu">Học nghề <span>→</span></a></div>
@@ -635,7 +638,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink" id="ve-ansan" style="padding-bottom:40px">
-  <span aria-hidden="true" class="num">i</span>
   <p class="label">An lành để san sẻ</p>
   <div class="glyphs">
     <div><span class="g"><img loading="lazy" decoding="async" src="../assets/logo-an.svg" alt="AN"></span><p>An lành, an yên trong thân và tâm — điều dưỡng sinh hướng tới cho mỗi người.</p></div>
@@ -644,7 +646,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink eco" id="he-sinh-thai" style="border-top:1px solid var(--line-ink)">
-  <span aria-hidden="true" class="num">ii</span>
   <div class="eco-head"><h2>Phía sau mỗi cơ sở Ansan</h2><p>Năm nhánh cùng một tên: đào tạo, nghiên cứu, sản phẩm, thiết bị và dịch vụ dưỡng sinh.</p></div>
   <ul class="cards">
     <li class="lead-card"><span class="st">Nguyễn Xiển · khai trương 11/2026</span><h3>Ansan Dưỡng Sinh</h3><p>Chuỗi cơ sở dưỡng sinh công nghệ cao, chăm sóc cơ — xương — khớp.</p><a class="link" href="duong-sinh.html">Khám phá <span>→</span></a></li>
@@ -656,7 +657,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ink" id="khong-gian" style="position:relative;padding:64px 0 110px">
-  <span aria-hidden="true" class="num" style="top:64px">iii</span>
   <div class="spaces-head"><h2>Hai tầng,<br>một hành trình</h2><p>Tĩnh tâm trước, chăm thân sau. Mỗi cơ sở Ansan đều có Không gian Tâm và Không gian Thân.</p></div>
   <div class="spaces">
     <article class="sp sp-a">
@@ -675,7 +675,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink" id="quy-trinh" style="border-top:1px solid var(--line-ink)">
-  <span aria-hidden="true" class="num">iv</span>
   <div class="proc">
     <div class="big65"><span class="cnt" data-to="65">65</span><span class="ph">phút</span><small>Mỗi buổi chăm sóc</small></div>
     <div>
@@ -691,7 +690,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch paper menu" id="lieu-trinh">
-  <span aria-hidden="true" class="num">v</span>
   <div class="menu-grid">
     <div>
       <h2 style="margin-top:0">Mười liệu trình,<br>theo vùng cơ thể</h2>
@@ -722,10 +720,10 @@ html{background:var(--nau)}
 </section>
 
 <section class="place ink" id="co-so">
-  <figure class="grade reveal" style="position:relative"><img loading="lazy" decoding="async" data-par src="../assets/loi-vao.jpg" alt="Quầy trà dưới mái ngói, biển ANSAN, cửa sổ tròn hoa sen"><span class="rc chip" style="position:absolute;left:var(--g);bottom:20px">Ảnh phối cảnh thiết kế</span></figure>
+  <figure class="grade reveal" style="position:relative"><img loading="lazy" decoding="async" data-par src="../assets/loi-vao.jpg" alt="Quầy trà dưới mái ngói, biển ANSAN, cửa sổ tròn hoa sen"></figure>
   <div class="txt">
     <div>
-      <p class="label">vi · Cơ sở mẫu · khai trương 11/2026</p>
+      <p class="label">Cơ sở mẫu · khai trương 11/2026</p>
       <h2>Nguyễn Xiển</h2>
       <dl>
         <div><dt>Địa chỉ</dt><dd>L7-18 KĐT mới Đại Kim, P. Định Công, Hà Nội</dd></div>
@@ -739,7 +737,7 @@ html{background:var(--nau)}
 </section>
 
 <section id="hop-tac">
-  <div class="pband reveal"><img loading="lazy" decoding="async" class="grade" data-par src="../assets/ban-cong.jpg" alt="Ban công xanh ngâm chân" ><div class="t"><p class="label">vii · Hợp tác mở điểm</p><h2 style="margin-top:20px">Mang Ansan về khu phố của bạn</h2></div></div>
+  <div class="pband reveal"><img loading="lazy" decoding="async" class="grade" data-par src="../assets/ban-cong.jpg" alt="Ban công xanh ngâm chân" ><div class="t"><p class="label">Hợp tác mở điểm</p><h2 style="margin-top:20px">Mang Ansan về khu phố của bạn</h2></div></div>
   <div class="ch paper partner" style="padding-top:112px">
     <div class="p-grid">
       <p class="lead">Ansan chuyển giao mô hình, đào tạo, sản phẩm, thiết bị và marketing. Mỗi điểm là một đơn vị kinh doanh độc lập, liên kết bằng hợp đồng hợp tác.</p>
@@ -755,7 +753,7 @@ html{background:var(--nau)}
 <section class="edu ink" id="edu">
   <div class="mou"><span class="label">Biên bản ghi nhớ hợp tác</span><b>20.10.2026</b><p>Ansan × Trường Trung cấp Y khoa Việt Nam</p></div>
   <div class="txt">
-    <p class="label">viii · Ansan Edu</p>
+    <p class="label">Ansan Edu</p>
     <h2>Học nghề dưỡng sinh cùng trường y</h2>
     <p>Biên bản ghi nhớ với Trường Trung cấp Y khoa Việt Nam, ký ngày 20/10/2026. Học viên trở thành kỹ thuật viên cho các cơ sở Ansan, theo một chuẩn tay nghề thống nhất.</p>
     <div class="courses"><div>Đại huyệt tán thanh<span>Lớp đầu tiên</span></div><div>Xoa bóp bấm huyệt<span>Lớp tiếp theo</span></div></div>
@@ -764,7 +762,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink leaders" id="ban-lanh-dao" style="border-top:1px solid var(--line-ink)">
-  <span aria-hidden="true" class="num">ix</span>
   <div class="sec-head"><div><p class="label">Ban lãnh đạo <span class="draft">Dự thảo · chỉ đăng khi HĐQT thông qua</span></p><h2>Những người đứng sau Ansan</h2></div><a class="link" href="ban-lanh-dao.html">Xem bộ máy <span>→</span></a></div>
   <ul>
     <li><figure class="ph" aria-label="Ảnh chân dung — chờ bổ sung"><svg aria-hidden="true"><use href="#sym"/></svg><figcaption>Ảnh chân dung<br>chờ bổ sung</figcaption></figure><span class="role">Chủ tịch Hội đồng Quản trị</span><h3>Bùi Thị Yến</h3></li>
@@ -776,7 +773,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch paper standards" id="chuan-muc">
-  <span aria-hidden="true" class="num">x</span>
   <div class="sec-head"><div><p class="label">Chuẩn mực &amp; đối tác</p><h2>Một tiêu chuẩn<br>cho mọi cơ sở</h2></div></div>
   <ol>
     <li><b>01</b><h3>Bộ tiêu chuẩn vận hành</h3><p>Quy trình 4 bước, menu 10 liệu trình, phiếu đánh giá thể trạng và sàng lọc an toàn trước mỗi liệu trình.</p></li>
@@ -793,7 +789,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch ink news" id="kien-thuc" style="border-top:1px solid var(--line-ink)">
-  <span aria-hidden="true" class="num">xi</span>
   <div class="sec-head"><div><p class="label">Góc dưỡng sinh &amp; tin mới</p><h2>Đọc chậm, sống khoẻ</h2></div><a class="link" href="tin-tuc.html">Đọc thêm <span>→</span></a></div>
   <ul>
     <li><figure class="grade"><img src="../assets/tam-rong.jpg" alt="Không gian Tâm" loading="lazy"></figure><span class="meta">Tin hoạt động · 20/10/2026</span><h3>Ansan và Trường Trung cấp Y khoa Việt Nam ký biên bản ghi nhớ hợp tác đào tạo</h3><a class="link" href="bai-viet-mau.html">Đọc thêm <span>→</span></a></li>
@@ -804,7 +799,6 @@ html{background:var(--nau)}
 </section>
 
 <section class="ch paper contact" id="lien-he">
-  <span aria-hidden="true" class="num">xii</span>
   <div class="c-grid">
     <div>
       <h2>Để Ansan <em>gọi lại</em> cho bạn</h2>
@@ -833,6 +827,15 @@ html{background:var(--nau)}
   <div class="legal"><span>ANSAN là thương hiệu của Công ty CP Nghiên cứu Ứng dụng Công nghệ Sức khỏe Việt Nam (VHTRA., JSC) — MSDN 0111322732.</span><span>Dịch vụ mang tính chăm sóc, hỗ trợ; không thay thế chẩn đoán và điều trị y khoa.</span></div>
 </footer>
 
+<script>
+/* trình duyệt chưa hỗ trợ text-wrap:pretty: nối hai chữ cuối bằng khoảng trắng không ngắt để dòng cuối không còn một chữ */
+(()=>{if(window.CSS&&CSS.supports('text-wrap','pretty'))return;
+document.querySelectorAll('main p, main li, main dd, main figcaption, main h1, main h2, main h3').forEach(el=>{
+  if(el.textContent.trim().split(/\s+/).length<4)return;
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let last=null,n;while((n=w.nextNode()))if(n.nodeValue.trim())last=n;
+  if(!last)return;const t=last.nodeValue.replace(/\s+$/,''),i=t.lastIndexOf(' ');
+  if(i>0)last.nodeValue=t.slice(0,i)+' '+t.slice(i+1)+last.nodeValue.slice(t.length);});})();
+</script>
 <script>
 (()=>{
 const root=document.documentElement;
@@ -909,7 +912,7 @@ function measure(){
   if(tl&&tli.length){const a=tli[0].offsetTop+DOT,b=tli[tli.length-1].offsetTop+DOT;
     L.tl={top:tl.getBoundingClientRect().top+y,a,b,lis:tli.map(li=>li.offsetTop+DOT)};
     tl.style.setProperty('--ta',a+'px');tl.style.setProperty('--tb',(tl.offsetHeight-b)+'px');}
-  sp.style.setProperty('--st',L.st+'px');sp.style.setProperty('--sh',L.len+'px');
+  if(sp){sp.style.setProperty('--st',L.st+'px');sp.style.setProperty('--sh',L.len+'px');}
 }
 /* scroll-driven CSS animations available → hero, An/San and photo drift run on the compositor */
 const SDA=CSS.supports('animation-timeline: view()');
@@ -920,10 +923,10 @@ function frame(){
   /* 2. spine runs from the first section after the hero to the top of the footer;
         the dot follows the middle of the screen along it and disappears outside that range */
   const raw=(mid-L.st)/L.len, prog=clamp(raw);
-  sp.style.setProperty('--k',prog.toFixed(4));
+  if(sp)sp.style.setProperty('--k',prog.toFixed(4));
   if(reduce) return;
-  dot.style.transform='translate3d(0,'+(L.st+prog*L.len-5).toFixed(1)+'px,0)';
-  dot.classList.toggle('on',raw>0&&raw<1);
+  if(dot){dot.style.transform='translate3d(0,'+(L.st+prog*L.len-5).toFixed(1)+'px,0)';
+  dot.classList.toggle('on',raw>0&&raw<1);}
   L.nums.forEach(o=>{o.n.classList.toggle('on',o.top<mid&&o.bot>mid);o.n.classList.toggle('past',o.bot<=mid)});
   if(!SDA){
   /* 1. hero */

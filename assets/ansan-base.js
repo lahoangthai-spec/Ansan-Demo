@@ -1,3 +1,11 @@
+/* trình duyệt chưa hỗ trợ text-wrap:pretty: nối hai chữ cuối bằng khoảng trắng không ngắt để dòng cuối không còn một chữ */
+(()=>{if(window.CSS&&CSS.supports('text-wrap','pretty'))return;
+document.querySelectorAll('main p, main li, main dd, main figcaption, main h1, main h2, main h3').forEach(el=>{
+  if(el.textContent.trim().split(/\s+/).length<4)return;
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let last=null,n;while((n=w.nextNode()))if(n.nodeValue.trim())last=n;
+  if(!last)return;const t=last.nodeValue.replace(/\s+$/,''),i=t.lastIndexOf(' ');
+  if(i>0)last.nodeValue=t.slice(0,i)+' '+t.slice(i+1)+last.nodeValue.slice(t.length);});})();
+
 /* Ansan — shared header behaviour + mobile menu for sub-pages. */
 (()=>{
 const root=document.documentElement, hd=document.querySelector('header');

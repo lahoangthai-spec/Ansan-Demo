@@ -357,3 +357,7 @@ html{background:var(--nau)}
 .ink-em{color:inherit}
 /* Audit 21/11: trên điện thoại chữ hero nằm trên phần sáng hơn của ảnh -> tối ảnh thêm (chỉ bằng filter của ảnh, không phủ màu) */
 @media (max-width:900px){.phero>img{filter:brightness(.29) contrast(1.05)}}
+
+/* chống xuống dòng một chữ: đoạn văn ngắt dòng "đẹp", tiêu đề chia đều các dòng */
+p,li,dd,dt,figcaption,blockquote,small{text-wrap:pretty}
+h1,h2,h3,h4{text-wrap:balance}
