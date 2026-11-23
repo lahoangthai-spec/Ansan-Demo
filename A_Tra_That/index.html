@@ -583,6 +583,13 @@ h1,h2,h3,h4{text-wrap:balance}
 /* tin: cả thẻ là liên kết */
 .news .nw{display:block;color:inherit}
 .news a.nw:hover h3{text-decoration:underline;text-decoration-color:var(--dong);text-underline-offset:.2em}
+
+/* phân cấp nhãn nhỏ trên nền tối (luật màu: chữ nhỏ trên nâu đậm chỉ được màu kem, không làm mờ):
+   nhãn nhẹ hơn tiêu đề và thân bài nhờ nét mảnh + vạch ngắn màu đồng phía trước (đồng được dùng cho đường kẻ) */
+.label,.news .meta,.eco .cards .st{font-weight:400}
+.label::before,.news .meta::before,.eco .cards .st::before{content:"";display:inline-block;width:16px;height:1px;background:var(--dong);vertical-align:middle;margin:0 10px 3px 0;flex:none}
+.paper .label,.mou .label{font-weight:600}
+.paper .label::before,.mou .label::before{content:none}
 </style>
 </head>
 <body>

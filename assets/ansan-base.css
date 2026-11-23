@@ -356,3 +356,10 @@ h1,h2,h3,h4{text-wrap:balance}
 
 /* số hotline trong bảng thông tin: bấm để gọi */
 dd a.tel{border-bottom:1px solid var(--dong);padding-bottom:2px}
+
+/* phân cấp nhãn nhỏ trên nền tối (luật màu: chữ nhỏ trên nâu đậm chỉ được màu kem, không làm mờ):
+   nhãn nhẹ hơn tiêu đề và thân bài nhờ nét mảnh + vạch ngắn màu đồng phía trước (đồng được dùng cho đường kẻ) */
+.label{font-weight:400}
+.label::before{content:"";display:inline-block;width:16px;height:1px;background:var(--dong);vertical-align:middle;margin:0 10px 3px 0;flex:none}
+.paper .label,.mou .label{font-weight:600}
+.paper .label::before,.mou .label::before{content:none}
