@@ -40,10 +40,13 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
 @media (max-width:900px){.two{grid-template-columns:1fr;gap:48px}.prose p{font-size:17px}}.vm{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
 .vm .big{font:400 clamp(24px,2.3vw,34px)/1.4 var(--serif);color:var(--nau);margin-top:20px;max-width:none}
 .vals .m{font-family:var(--serif);font-size:19px;font-style:italic;margin-bottom:10px}
+.head.solo{grid-template-columns:1fr}
 .isnt{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .isnt>div{padding:32px;box-shadow:inset 0 0 0 1px var(--dong)}
 .isnt>div:first-child{background:var(--nau);color:var(--kem);box-shadow:none}.isnt>div:first-child .label{color:var(--kem)}
-.isnt ul{list-style:none;margin-top:18px}
+.isnt .isl{display:flex;align-items:center;gap:16px}
+.isnt .ic{width:44px;height:44px;flex:none;fill:none;stroke:var(--dong);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.isnt ul{list-style:none;margin-top:22px}
 .isnt li{padding:14px 0;font:400 22px/1.35 var(--serif);box-shadow:inset 0 -1px 0 var(--dong)}
 .isnt>div:first-child li{box-shadow:inset 0 -1px 0 var(--nau-dat)}
 @media (max-width:900px){.vm,.isnt{grid-template-columns:1fr;gap:40px}}</style>
@@ -93,15 +96,15 @@ addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v){v.ready.c
 </section>
 
 <section class="sec ink" style="box-shadow:inset 0 1px 0 var(--nau-dat)">
-  <div class="head"><h2>Bốn giá trị cốt lõi</h2><p>Mỗi giá trị đi kèm việc cụ thể chúng tôi làm hằng ngày.</p></div>
+  <div class="head"><h2>Bốn giá trị cốt lõi</h2></div>
   <ul class="grid-list vals" style="--cols:4"><li><i>01</i><h3>Tận tâm</h3><p class="m">Chăm sóc khách như người thân</p><p>Đánh giá thể trạng trước mỗi buổi; hướng dẫn tại nhà; theo dõi sau buổi.</p></li><li><i>02</i><h3>Chuẩn mực</h3><p class="m">Một tiêu chuẩn cho mọi cơ sở</p><p>Quy trình 4 bước, menu 10 liệu trình; đào tạo cùng trường y; kiểm tra định kỳ.</p></li><li><i>03</i><h3>Minh bạch</h3><p class="m">Nói đúng điều mình làm được</p><p>Không hứa chữa khỏi; giá niêm yết; số liệu kinh doanh luôn ghi rõ giả định.</p></li><li><i>04</i><h3>Đồng hành</h3><p class="m">Cùng đối tác và học viên phát triển</p><p>Chuyển giao mô hình, đào tạo, sản phẩm, marketing.</p></li></ul>
 </section>
 
 <section class="sec paper">
-  <div class="head"><h2>Ansan là gì,<br><em>và không là gì</em></h2><p class="muted">Để mọi người hiểu đúng ngay từ đầu.</p></div>
+  <div class="head solo"><h2>Ansan là gì, <em>và không là gì</em></h2></div>
   <div class="isnt">
-    <div><p class="label">Ansan là</p><ul><li>Chăm sóc sức khoẻ chủ động — dưỡng sinh công nghệ cao</li><li>Thủ pháp Y học cổ truyền và thiết bị hỗ trợ, trong một quy trình chuẩn 4 bước</li><li>Một hệ sinh thái đủ đào tạo — sản phẩm — thiết bị — dịch vụ</li></ul></div>
-    <div><p class="label">Ansan không phải</p><ul><li>Spa</li><li>Phòng khám — dịch vụ không thay thế chẩn đoán và điều trị y khoa</li><li>Hiệp hội — Ansan là thương hiệu của một công ty cổ phần</li></ul></div>
+    <div><p class="label isl"><svg class="ic" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21"/><path d="M14 22.5l5.5 5.5L30 17"/></svg>Ansan là</p><ul><li>Chăm sóc sức khoẻ chủ động — dưỡng sinh công nghệ cao</li><li>Thủ pháp Y học cổ truyền và thiết bị hỗ trợ, trong một quy trình chuẩn 4 bước</li><li>Một hệ sinh thái đủ đào tạo — sản phẩm — thiết bị — dịch vụ</li></ul></div>
+    <div><p class="label isl"><svg class="ic" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21"/><path d="M16 16l12 12M28 16L16 28"/></svg>Ansan không phải</p><ul><li>Spa</li><li>Phòng khám — dịch vụ không thay thế chẩn đoán và điều trị y khoa</li><li>Hiệp hội — Ansan là thương hiệu của một công ty cổ phần</li></ul></div>
   </div>
 </section>
 
